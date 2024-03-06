@@ -1,12 +1,12 @@
 <template>
   <footer class="w-100 px-20 py-10 mt-80 footer">
-    <div id="top-row" class="flex justify-between mb-10">
+    <div id="top-row" class="flex justify-between mb-10 ">
       <img
         src="~/assets/images/footer-logo.png"
-        class="w-40 object-contain sm:hidden md:hidden lg:block"
+        class="w-40 object-contain  sm:hidden md:hidden lg:block"
         alt="logo"
       />
-      <div id="info" class="flex gap-40 sm:gap-20">
+      <div id="info" class="flex md:gap-40 lg:gap-40 xl:gap-40 sm:justify-between md:justify-between lg:justify-end xl:justify-end w-full">
         <div id="contact" class="flex flex-col ">
           <h3 class="text-3xl mb-3">Contact</h3>
           <ul class="flex flex-col gap-2">
@@ -46,7 +46,7 @@
       </div>
     </div>
     <nav class="flex justify-between pt-5 border-t flex-wrap">
-      <ul class="flex gap-5">
+      <ul class="flex gap-5  flex-wrap sm:gap-3">
         <li>
           <p>
             <a href="#about-us">Over <span>ons</span></a>
@@ -65,7 +65,7 @@
           <p><a href="#contact">Contact</a></p>
         </li>
       </ul>
-      <span>&copy; Lukas Olivier</span>
+      <span class="sm:mt-5">&copy; Lukas Olivier</span>
     </nav>
   </footer>
 </template>
