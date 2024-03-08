@@ -7,6 +7,8 @@
       loop
       src="~/assets/images/video.mp4"
       type="video/mp4"
+      playsinline
+      poster="~/assets/images/hero-image.png"
     ></video>
     <div
       class="z-10 relative h-svh text-white w-screen flex flex-col items-center justify-center page-title"
