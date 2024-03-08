@@ -1,5 +1,5 @@
 <template>
-  <section id="about-us" class="w-7/12 m-auto flex justify-between">
+  <section id="about-us" class="lg:w-7/12 xl:w-7/12 sm:w-full md:w-full sm:p-10 lg:p-0 m-auto flex justify-between">
     <div class="sm:w-full 
                 md:w-full 
                 lg:w-1/2 

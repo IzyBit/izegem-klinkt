@@ -6,7 +6,7 @@
         class="w-40 object-contain  sm:hidden md:hidden lg:block"
         alt="logo"
       />
-      <div id="info" class="flex md:gap-40 lg:gap-40 xl:gap-40 sm:justify-between md:justify-between lg:justify-end xl:justify-end w-full">
+      <div id="info" class="flex sm:justify-between lg:justify-end gap-10 sm:flex-col md:flex-row sm:w-full md:w-full">
         <div id="contact" class="flex flex-col ">
           <h3 class="text-3xl mb-3">Contact</h3>
           <ul class="flex flex-col gap-2">
@@ -30,9 +30,9 @@
             </li>
           </ul>
         </div>
-        <div id="socials" class="flex flex-col sm:px-4 md:px-0 lg:px-0 xl:px-0">
+        <div id="socials" class="flex flex-col ">
           <h3  class="text-3xl mb-5  sm:hidden md:block lg:block xl:block">Sociale Media</h3>
-          <ul class="flex flex-row items-center gap-7 sm:flex-col md:flex-row lg:flex-row xl:flex-row">
+          <ul class="flex flex-row items-center gap-7 ">
             <li>
               <a href="https://www.facebook.com/izegemklinkt" target="_blank" 
                 ><svg class="w-10" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 510.125"><path fill="#fff" fill-rule="nonzero" d="M512 256C512 114.615 397.385 0 256 0S0 114.615 0 256c0 120.059 82.652 220.797 194.157 248.461V334.229h-52.79V256h52.79v-33.709c0-87.134 39.432-127.521 124.977-127.521 16.218 0 44.202 3.18 55.651 6.36v70.916c-6.042-.635-16.537-.954-29.575-.954-41.977 0-58.196 15.901-58.196 57.241V256h83.619l-14.365 78.229h-69.254v175.896C413.771 494.815 512 386.885 512 256z"/></svg></a>  
@@ -49,7 +49,7 @@
       <ul class="flex gap-5  flex-wrap sm:gap-3">
         <li>
           <p>
-            <a href="#about-us">Over <span>ons</span></a>
+            <a href="#about-us">Ons verhaal</a>
           </p>
         </li>
         <li>
