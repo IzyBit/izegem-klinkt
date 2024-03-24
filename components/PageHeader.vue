@@ -8,35 +8,28 @@
       <nav class="z-50 ">
         <ul class="flex flex-row w-full gap-10">
           <li>
-            <a class="text-lg hover:underline font-bold uppercase" href="#"
+            <a class="text-lg hover:underline font-bold uppercase" href="/programma"
               >Programma</a
             >
           </li>
           <li>
             <a
               class="text-lg hover:underline font-bold uppercase"
-              href="#practical"
+              href="/#practical"
               >Praktisch</a
             >
           </li>
           <li>
             <a
               class="text-lg hover:underline font-bold uppercase"
-              href="#about-us"
-              >Over ons</a
+              href="/#about-us"
+              >Ons verhaal</a
             >
           </li>
           <li>
             <a
               class="text-lg hover:underline font-bold uppercase"
-              href="#gallery"
-              >Galerij</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-lg hover:underline font-bold uppercase"
-              href="#contact"
+              href="/#contact"
               >Contact</a
             >
           </li>

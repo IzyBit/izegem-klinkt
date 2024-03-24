@@ -1,0 +1,46 @@
+<template>
+    <div class="bg-gradient-to-r w-100 from-zinc-900 to-neutral-900 flex flex-col items-center">
+        <PageHeader></PageHeader>
+        <HamburgerMenu></HamburgerMenu>
+        <div class="flex mt-40 justify-center gap-10 h-1/6 sm:w-full lg:w-9/12">
+          
+            <div class="flex flex-col w-1/2 justify-between">
+                <div class="mb-5">
+                    <h1 class="text-5xl text-white font-bold "> {{ bandDetails.bandName }}</h1>
+                    <p class="mb-5 text-2xl font-bold"  >{{ bandDetails.location }}  <span v-if="bandDetails.time">- {{ bandDetails.time }}</span></p>
+                    <p class="leading-relaxed">  {{ bandDetails.description }} </p>
+                </div>
+                <p v-if="bandDetails.website" class="mb-5">Meer over {{ bandDetails.bandName }}: <a target="_blank" :href="bandDetails.website" class="underline ">{{ bandDetails.website }}</a></p>
+                
+            <NuxtLink to="/programma" >
+                <p class="flex gap-5 hover:underline"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M7.793 2.232a.75.75 0 0 1-.025 1.06L3.622 7.25h10.003a5.375 5.375 0 0 1 0 10.75H10.75a.75.75 0 0 1 0-1.5h2.875a3.875 3.875 0 0 0 0-7.75H3.622l4.146 3.957a.75.75 0 0 1-1.036 1.085l-5.5-5.25a.75.75 0 0 1 0-1.085l5.5-5.25a.75.75 0 0 1 1.06.025Z" clip-rule="evenodd" />
+                </svg>Terug naar programma</p>
+            </NuxtLink>
+            </div>
+            <div class="sm:hidden md:block w-3/5 rotate-1">
+                <img :src="bandDetails.bandPhoto" alt="bandDetails.bandName" class="w-full h-full object-cover ">
+                <img src="~/assets/images/note.png" alt="note" class="sm:hidden lg:block absolute w-20 h-20 top-0 right-0">
+            </div>
+            <img src="~/assets/images/note2.png" alt="note" class="sm:hidden lg:block absolute w-25 h-20 right-5 bottom-10">
+        </div>
+
+        <div v-if="bandDetails.video" class="w-full flex justify-center mt-40">
+            <iframe class="sm:w-96 lg:w-1/3 h-80" :src="bandDetails.video" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <img src="~/assets/images/samba.png" alt="note" class="sm:hidden lg:block absolute w-20 h-15 left-40 -rotate-12">
+    <Footer></Footer>
+</template>
+  
+<script setup>
+    import { ref } from 'vue';
+    import { bands } from '~/data/bands.ts';
+
+    const route = useRoute()
+
+    // Get the band name from the URL
+    const bandName = route.params.name
+    console.log(bandName)
+    const bandDetails = ref(bands.find(band => band.lookupName === bandName))
+</script>
