@@ -27,6 +27,13 @@
           <li>
             <a
               class="text-lg hover:underline font-bold uppercase"
+              href="/#info"
+              >Info</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-lg hover:underline font-bold uppercase"
               href="/#about-us"
               >Ons verhaal</a
             >

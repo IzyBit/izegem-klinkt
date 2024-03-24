@@ -2,9 +2,10 @@
   <div class="bg-gradient-to-r from-zinc-900 to-neutral-900">
     <PageHeader></PageHeader>
     <HamburgerMenu></HamburgerMenu>
-    <div class="flex flex-col items-center justify-center ">
+    <div class="flex flex-col  mx-auto w-9/12 ">
       <h1 class="text-5xl text-white font-bold mt-20 mb-10">Programma</h1>
-      <div class="flex flex-row w-9/12 sm:justify-center lg:justify-start gap-10 h-full flex-wrap">
+      <a class="underline" target="_blank" href="/BOEKJE-IZEGEMKLINKT-2024.pdf"><h2 class="text-2xl text-white font-bold mb-10">Download hier het programmaboekje</h2></a>
+      <div class="flex flex-row sm:justify-center lg:justify-start gap-10 h-full flex-wrap">
         <BandCard
           v-for="lineUpItem in lineUp"
           :key="lineUpItem.id"

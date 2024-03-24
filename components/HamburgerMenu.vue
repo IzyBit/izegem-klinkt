@@ -22,6 +22,11 @@
     
       <ul class="flex flex-col text-right gap-10 z-40 ">
           <li>
+            <a class="text-lg hover:underline font-bold uppercase" href="/#home"
+              >Home</a
+            >
+          </li>
+          <li>
             <a class="text-lg hover:underline font-bold uppercase" href="/programma"
               >Programma</a
             >
@@ -31,6 +36,13 @@
               class="text-lg hover:underline font-bold uppercase"
               href="/#practical"
               >Praktisch</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-lg hover:underline font-bold uppercase"
+              href="/#info"
+              >Info</a
             >
           </li>
           <li>

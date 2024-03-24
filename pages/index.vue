@@ -5,6 +5,8 @@
     <Hero></Hero>
     <Practical></Practical>
     <Divider :border=true></Divider>
+       <Info></Info>
+    <Divider :border=true></Divider>
     <About></About>
     <Divider :border=false></Divider>
     <Footer></Footer>
