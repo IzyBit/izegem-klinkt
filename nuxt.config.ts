@@ -15,6 +15,14 @@ export default defineNuxtConfig({
     'primeicons/primeicons.css',
     '~/assets/css/main.css',
   ],
+  // SEO
+  head: {
+    title: 'Izegem Klinkt',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    ],
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
