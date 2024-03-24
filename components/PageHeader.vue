@@ -1,12 +1,17 @@
 <template>
   <div id="home" class="sm:hidden md:hidden lg:block xl:block">
-    <a href="#home" class="w-20 h-20 z-0 fixed top-5 left-5 back-to-top"></a>
+    <a href="/#home" class="w-20 h-20 z-20 fixed top-5 left-5 back-to-top"></a>
 
     <header
       class="px-10 py-10 flex flex-row relative w-screen justify-end z-50 bg-transparent"
     >
       <nav class="z-50 ">
         <ul class="flex flex-row w-full gap-10">
+          <li>
+            <a class="text-lg hover:underline font-bold uppercase" href="/#home"
+              >Home</a
+            >
+          </li>
           <li>
             <a class="text-lg hover:underline font-bold uppercase" href="/programma"
               >Programma</a

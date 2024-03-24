@@ -15,7 +15,7 @@
     <div
       class="z-10 relative h-svh text-white w-screen flex flex-col items-center justify-center page-title"
     >
-      <img class="hero-img " src="~/assets/images/footer-logo.png" alt="Logo" />
+      <img class="hero-img z-30" src="~/assets/images/footer-logo.png" alt="Logo" />
       <h1 class="text-4xl font-bold text-center mt-10">
         17 MEI | GRATIS TOEGANG
       </h1>
