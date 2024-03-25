@@ -28,7 +28,7 @@ const lineUp = ref(bands);
 
 definePageMeta
 ({
-  title: "Izegem Klinkt - Muzikale Tournée in de Pekkersstad",
+  title: "Izegem Klinkt - Programma",
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1.0" },

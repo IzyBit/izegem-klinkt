@@ -4,7 +4,7 @@
         <HamburgerMenu></HamburgerMenu>
         <div class="flex mt-40 justify-center gap-10 h-1/6 sm:w-full lg:w-9/12">
           
-            <div class="flex flex-col w-1/2 justify-between">
+            <div class="flex flex-col lg:w-1/2 sm:w-10/12 justify-between">
                 <div class="mb-5">
                     <h1 class="text-5xl text-white font-bold "> {{ bandDetails.bandName }}</h1>
                     <p class="mb-5 text-2xl font-bold"  >{{ bandDetails.location }}  <span v-if="bandDetails.time">- {{ bandDetails.time }}</span></p>
