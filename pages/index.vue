@@ -14,20 +14,22 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta
-({
-  title: "Izegem Klinkt - Muzikale Tournée in de Pekkersstad",
+useHead({
+  title: 'Izegem Klinkt',
   meta: [
-    { charset: "utf-8" },
-    { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-    { name: "description", content: "Izegem Klinkt - Muzikale Tournée in de Pekkersstad. 4 mei 2024. Gratis toegang. 14 deelnemende cafés. 14 bands. 1 stad. 1 muzikale tournée."},
-    { name: "keywords", content: "Izegem, Izegem Klinkt, Muziek, Muzikale Tournée, Pekkersstad, Pekkers, Muziekfestival, Festival, Gratis, Gratis toegang, Bands, Cafés, 4 mei 2024, kroegentocht" },	
-    { name: "author", content: "Lukas Olivier" },
-    { property: "og:title", content: "Izegem Klinkt - Muzikale Tournée in de Pekkersstad" },
-    { property: "og:description", content:  "Izegem Klinkt - Muzikale Tournée in de Pekkersstad. 4 mei 2024. Gratis toegang. 14 deelnemende cafés. 14 bands. 1 stad. 1 muzikale tournée." },
-    { property: "og:url", content: "https://izegemklinkt.be/" },
-    { property: "og:type", content: "website" },
-    { rel: "canonical", href: "https://izegemklinkt.be/" }
-  ]
+      { property: 'og:title', content: 'Izegem Klinkt'},
+      { property: 'og:description', content: 'Izegem Klinkt - Muzikale Tournée in de Pekkersstad. 4 mei 2024. Gratis toegang. 14 deelnemende cafés. 14 bands. 1 stad. 1 muzikale tournée.' },
+      { property: 'keywords', content: 'Izegem Klinkt, Izegem, Muziek, Pekkersstad, Tournée, 4 mei 2024, Gratis, 14 cafés, 14 bands, 1 stad, 1 muzikale tournée, kroegentocht, tocht, kroegen, programma' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://www.izegemklinkt.be' },
+      { property: 'og:locale', content: 'nl_BE' },
+      { property: 'og:image', content: 'https://www.izegemklinkt.be/bands/middleofnowhere.webp' }
+  ],
+  htmlAttrs: {
+    lang: 'nl'
+  },
+  link: [
+    { rel: 'canonical', href: 'https://www.izegemklinkt.be' }
+  ],
 })
 </script>
