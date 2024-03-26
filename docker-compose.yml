@@ -1,7 +1,9 @@
 version: "3"
 services:
-  my-app:
+  app:
+    container_name: izegem-klinkt-nuxt
     build:
       context: .
     ports:
-      - "3000:3000"
+      - 8080:3000
+networks: {}
