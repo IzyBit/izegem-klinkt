@@ -2,6 +2,7 @@
 
 <div class="lg:hidden xl:hidden">
   <button
+      aria-label="Open mobile menu"
       class="relative  z-50 w-screen flex justify-end  hover:cursor-pointer mb-10 px-7 pt-5"
       @click="isMobileMenuOpen = !isMobileMenuOpen"
     >     

@@ -8,14 +8,13 @@
       src="~/assets/images/video.mp4"
       type="video/mp4"
       playsinline
-      poster="~/assets/images/hero-image.png"
-      ref="videoPlayer"
-     
-    ></video>
+      poster="~/assets/images/hero-image.webp"
+      ref="videoPlayer" 
+    >    <track src="#" kind="captions" srclang="en" label="english_captions"></video>
     <div
       class="z-10 relative h-svh text-white w-screen flex flex-col items-center justify-center page-title"
     >
-      <img class="hero-img z-30" src="~/assets/images/footer-logo.png" alt="Logo" />
+      <img class="hero-img z-30" src="~/assets/images/footer-logo.webp" alt="Logo" />
       <h1 class="text-4xl font-bold text-center mt-10">
         17 MEI | GRATIS TOEGANG
       </h1>

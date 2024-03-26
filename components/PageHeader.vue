@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="sm:hidden md:hidden lg:block xl:block">
-    <a href="/#home" class="w-20 h-20 z-20 fixed top-5 left-5 back-to-top"></a>
+    <a href="/#home" aria-label="Back to home" class="w-20 h-20 z-20 fixed top-5 left-5 back-to-top"></a>
 
     <header
       class="px-10 py-10 flex flex-row relative w-screen justify-end z-50 bg-transparent"
@@ -53,7 +53,7 @@
 
 <style scoped>
 .back-to-top {
-  background-image: url("~/assets/images/footer-logo.png");
+  background-image: url("~/assets/images/footer-logo.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

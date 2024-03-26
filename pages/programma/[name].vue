@@ -20,16 +20,16 @@
             </div>
             <div class="sm:hidden md:block w-3/5 rotate-1">
                 <img :src="bandDetails.bandPhoto" alt="bandDetails.bandName" class="w-full h-full object-cover ">
-                <img src="~/assets/images/note.png" alt="note" class="sm:hidden lg:block absolute w-20 h-20 top-0 right-0">
+                <img src="~/assets/images/note.webp" alt="note" class="sm:hidden lg:block absolute w-20 h-20 top-0 right-0">
             </div>
-            <img src="~/assets/images/note2.png" alt="note" class="sm:hidden lg:block absolute w-25 h-20 right-5 bottom-10">
+            <img src="~/assets/images/note2.webp" alt="note" class="sm:hidden lg:block absolute w-25 h-20 right-5 bottom-10">
         </div>
 
         <div v-if="bandDetails.video" class="w-full flex justify-center mt-40">
             <iframe class="sm:w-96 lg:w-1/3 h-80" :src="bandDetails.video" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
-    <img src="~/assets/images/samba.png" alt="note" class="sm:hidden lg:block absolute w-20 h-15 left-40 -rotate-12">
+    <img src="~/assets/images/samba.webp" alt="note" class="sm:hidden lg:block absolute w-20 h-15 left-40 -rotate-12">
     <Footer></Footer>
 </template>
   

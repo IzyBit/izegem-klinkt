@@ -25,7 +25,7 @@
     <div
       class="w-1/4 object-cover -rotate-2 hover:rotate-0 transition-transform duration-500 ease-in-out sm:hidden md:hidden lg:block"
     >
-      <a target="_blank" href="/BOEKJE-IZEGEMKLINKT-2024.pdf"><img src="~/assets/images/boekje.png" alt="boekje"></a>
+      <a target="_blank" href="/BOEKJE-IZEGEMKLINKT-2024.pdf"><img src="~/assets/images/boekje.webp" alt="boekje"></a>
     </div>
   </section>
 </template>
