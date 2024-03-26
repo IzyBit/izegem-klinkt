@@ -83,7 +83,7 @@ export const bands: Band[] = [
   {
     lookupName: "arrow",
     location: "Plectrum",
-    time: "",
+    time: "21u-01u",
     bandPhoto: "/bands/arrow.png",
     bandName: "Arrow",
     website: "",
