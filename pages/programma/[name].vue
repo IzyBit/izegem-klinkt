@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gradient-to-r w-100 from-zinc-900 to-neutral-900 flex flex-col items-center">
+    <div class="flex flex-col items-center w-100">
         <PageHeader></PageHeader>
         <HamburgerMenu></HamburgerMenu>
         <div class="flex mt-40 justify-center gap-10 h-1/6 sm:w-full lg:w-9/12">
