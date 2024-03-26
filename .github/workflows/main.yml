@@ -24,11 +24,11 @@ jobs:
         with:
           command: |
             cd /home/docker/stacks/izegem-klinkt-nuxt
-            git pull
-          host: '${{ secrets.HOST }}'
-          username: '${{ secrets.USERNAME }}'
-          port: '${{ secrets.PORT }}'
-          privateKey: "${{ secrets.SSH_KEY }}"
+            git pull origin main
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          privateKey: ${{ secrets.SSH_KEY }}
           
       - name: Deploy via SSH
         uses: tiyee/action-ssh@v1.0.1
