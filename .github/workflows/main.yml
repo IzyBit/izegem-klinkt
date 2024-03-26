@@ -23,15 +23,15 @@ jobs:
         uses: tiyee/action-ssh@v1.0.1
         with:
           command: |
-            cd /home/docker/stacks/blog
+            cd /home/docker/stacks/izegem-klinkt-nuxt
       
             if docker ps -a --format '{{.Names}}' | grep izegem-klinkt-nuxt; then
               echo "Container exists, restarting..."
               docker compose down
-              docker compose docker compose up -d --build
+              docker compose up -d --build
             else
               echo "Container does not exist, creating a new one..."
-              docker compose docker compose up -d --build
+              docker compose up -d --build
             fi
           host: '${{ secrets.HOST }}'
           username: '${{ secrets.USERNAME }}'
