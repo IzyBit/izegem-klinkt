@@ -19,7 +19,7 @@
         Waarheen de muzikale avond u verder brengt, bepaalt u uiteraard  volledig zelf. Het plannetje binnenin dit boekje brengt u probleemloos waar u wil.<br> <br> <span class="font-bold">Een gouden tip: neem even de tijd om het <a class="underline" target="_blank" href="/BOEKJE-IZEGEMKLINKT-2024.pdf">Izegem Klinkt-programma anno 2024</a> door te nemen.</span> 
         Zo mist u geen enkele favoriet en hoeft u de avond zelf alleen maar te genieten! Het enige wat u nu  nog hoeft te doen is 17 mei 2024 met stip in uw agenda aanduiden. Kom erbij en wees welkom! Geniet met volle teugen van Izegem Klinkt!
        <br> <br>  Wij wensen u veel leute en plezier, <br>
-        De Leutevrienden
+        De Leutvrienden
       </p>
     </div>
     <div

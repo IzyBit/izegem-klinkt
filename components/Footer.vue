@@ -46,24 +46,45 @@
       </div>
     </div>
     <nav class="flex justify-between pt-5 border-t flex-wrap">
-      <ul class="flex gap-5  flex-wrap sm:gap-3">
+      <ul class="flex gap-5 text-md  flex-wrap sm:gap-3">
         <li>
-          <p>
-            <a href="#about-us">Ons verhaal</a>
-          </p>
-        </li>
-        <li>
-          <p><a href="#program">Programma</a></p>
-        </li>
-        <li>
-          <p><a href="#practical">Praktisch</a></p>
-        </li>
-        <li>
-          <p><a href="#gallery">Galerij</a></p>
-        </li>
-        <li>
-          <p><a href="#contact">Contact</a></p>
-        </li>
+            <a class=" hover:underline font-bold uppercase" href="/#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline font-bold uppercase" href="/programma"
+              >Programma</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:underline font-bold uppercase"
+              href="/#practical"
+              >Praktisch</a
+            >
+          </li>
+          <li>
+            <a
+              class=" hover:underline font-bold uppercase"
+              href="/#info"
+              >Info</a
+            >
+          </li>
+          <li>
+            <a
+              class=" hover:underline font-bold uppercase"
+              href="/#about-us"
+              >Ons verhaal</a
+            >
+          </li>
+          <li>
+            <a
+              class=" hover:underline font-bold uppercase"
+              href="/#contact"
+              >Contact</a
+            >
+          </li>
       </ul>
       <span class="sm:mt-5">&copy; Lukas Olivier</span>
     </nav>
