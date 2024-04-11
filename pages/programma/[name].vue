@@ -1,8 +1,10 @@
 <template>
-  <div class="flex flex-col items-center w-100">
+  <div class="flex flex-col w-full">
     <PageHeader></PageHeader>
     <HamburgerMenu></HamburgerMenu>
-    <div class="flex mt-40 justify-center gap-10 h-1/6 sm:w-full lg:w-9/12">
+    <div
+      class="flex mt-40 justify-center gap-10 h-1/6 sm:11/12 lg:w-9/12 mx-auto"
+    >
       <div class="flex flex-col lg:w-1/2 sm:w-10/12 justify-between">
         <div class="mb-5">
           <h1 class="text-5xl text-white font-bold">
@@ -14,7 +16,7 @@
           </p>
           <p class="leading-relaxed">{{ bandDetails.description }}</p>
         </div>
-        <p v-if="bandDetails.website" class="mb-5">
+        <p v-if="bandDetails.website" class="mb-5 break-words">
           Meer over {{ bandDetails.bandName }}:
           <a target="_blank" :href="bandDetails.website" class="underline">{{
             bandDetails.website
