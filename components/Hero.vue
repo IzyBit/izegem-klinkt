@@ -1,20 +1,26 @@
 <template>
-  <div  @click="togglePlayPause">
+  <div @click="togglePlayPause">
     <video
-      class="w-screen object-cover absolute top-0 left-0 z-0 h-full"
-      autoplay=true
+      class="object-cover absolute top-0 left-0 z-0 h-full w-full"
+      autoplay="true"
       muted
       loop
       src="~/assets/images/video.mp4"
       type="video/mp4"
       playsinline
       poster="~/assets/images/hero-image.webp"
-      ref="videoPlayer" 
-    >    <track src="#" kind="captions" srclang="en" label="english_captions"></video>
-    <div
-      class="z-10 relative h-svh text-white w-screen flex flex-col items-center justify-center page-title"
+      ref="videoPlayer"
     >
-      <img class="hero-img z-30" src="~/assets/images/footer-logo.webp" alt="Logo" />
+      <track src="#" kind="captions" srclang="en" label="english_captions" />
+    </video>
+    <div
+      class="z-10 relative h-svh text-white flex flex-col items-center justify-center page-title"
+    >
+      <img
+        class="hero-img z-30"
+        src="~/assets/images/footer-logo.webp"
+        alt="Logo"
+      />
       <h1 class="text-4xl font-bold text-center mt-10">
         17 MEI | GRATIS TOEGANG
       </h1>
@@ -23,7 +29,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const videoPlayer = ref(null);
 
@@ -42,8 +48,8 @@ const togglePlayPause = () => {
   transform: translateY(-10rem);
 }
 
-.hero-img  {
+.hero-img {
   width: 70vw;
-  max-width: 30rem
+  max-width: 30rem;
 }
 </style>
