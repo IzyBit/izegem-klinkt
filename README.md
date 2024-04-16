@@ -1,75 +1,59 @@
-# Nuxt 3 Minimal Starter
+# Izegem Klinkt
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Description
 
-## Setup
+Izegem Klinkt is a captivating musical tour in the heart of Pekkersstad. With over 30 editions, we've been celebrating music, camaraderie, and togetherness, all thanks to the dedicated efforts of passionate volunteers. This website, built using Nuxt 3, serves as the digital hub for Izegem Klinkt, providing essential information about the event, including dates, locations, and line-ups.
 
-Make sure to install the dependencies:
+## Installation
 
 ```bash
-# npm
+# Clone the repository
+git clone https://github.com/LukasOlivier/izegem-klinkt-nuxt
+
+# Navigate to the directory
+cd izegem-klinkt-nuxt
+
+# Install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Start the development server
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Deployment
 
-Build the application for production:
+To deploy the website, run the following command:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+npm run generate
 ```
 
-Locally preview production build:
+This will generate a `.output/public` directory containing the static files for the website. These files can be uploaded to any static hosting provider, such as Netlify or Vercel.
 
-```bash
-# npm
-npm run preview
+## Editing line-up
 
-# pnpm
-pnpm run preview
+The line-up is stored in the `bands.ts` file in the `data` directory. To edit the line-up, simply modify the contents of this file. Each band is represented as an object with the following properties:
 
-# yarn
-yarn preview
+- `lookupName`: A unique identifier for the band, used for the url. This should be a lowercase, hyphen-separated version of the band name.
 
-# bun
-bun run preview
-```
+- `location`: The location where the band will be performing.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- `time`: The time at which the band will be performing.
+
+- `bandPhoto`: The path to the band's photo, stored in the `public/bands` directory. Please use .webp format for optimal performance.
+
+- `bandName`: The name of the band.
+
+- `website` (optional): The website of the band.
+
+- `video` (optional): The path to a video of the band. This can be a YouTube or Facebook link.
+
+- `description`: A brief description of the band.
+
+## Contributing
+
+If you would like to make any changes to the line-up or have any questions, please contact Lukas Olivier at olivier.lukas2003@gmail.com or Bjorn Olivier at bjorn.olivier@telenet.be. Any modifications to the line-up or any other part of the project should be done through a pull request.
+
+## License
+
+The content of this project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
