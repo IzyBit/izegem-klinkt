@@ -61,14 +61,14 @@ export const bands: Band[] = [
     description: "Girls from below is een 5 koppige coverband met 4 pekkers en een misfit uitHarelbeke, ontstaan op een zolder, waar de meisjes eronder zich te pletter inhet zweet werkten. Deze lokale helden in spe namen de fitnessladies mee ineen nostalgisch tripje door de punk, new wave en rock scene.Extatisch van de killer guitar riff s van Steven en Jacky C, euforisch van de vettebass van Tim, verrukt van het charisma en de snor van Dieter en in trance vande dampende beats en body van Piet vormen zij de fanclub van het eerste uur!Uit eeuwige dankbaarheid noemde dit zootje ongeregeld de band naar demeisjes van beneden. Girls From Below was geboren, met een eigenzinnigenummerkeuze waar stilstaan geen optie is. Come closer and see en wachtvooral niet te lang... Na vorige editie de opener te zijn van Het Bierkasteel-terras zijn ze nu klaar voor het echte werk!"
   },
   {
-    lookupName: "barking-bruce",
+    lookupName: "muffler",
     location: "Playa",
     time: "",
-    bandPhoto: "/bands/barking-bruce.webp",
-    bandName: "Barking Bruce",
-    website: "https://www.barkingbruce.com/",
-    video: "https://www.youtube.com/embed/gRiBvrIiwkk?si=iaKbG9PZ-7uuTxbf",
-    description: "Waar Barking Bruce komt, gaat het publiek nog lang niet naar huis!De energieke Vlaamse coverband Barking Bruce bundelt individuelekwaliteiten in net dié nummers waar je als publiek direct op los wilt gaan. Deband serveert een flinke dosis rock, grunge, punkrock en hiphop, overgotenmet een smakelijke Barking Bruce saus. Denk hierbij aan een stevige PearlJam klassieker, een herwerkte versie van Zombie, een Punkrock en MetallicaMedley waarbij de muren amper overeind zullen blijven staan en verder vettehits van o.a. The Foo Fighters, Linkin Park, Radiohead, Rage Against TheMachine en Nirvana."
+    bandPhoto: "/bands/muffler.webp",
+    bandName: "Muffler",
+    website: "https://www.facebook.com/Mufflerband/?locale=nl_NL",
+    video: "https://www.youtube.com/embed/aUH1GSBPKEU?si=_5H2WiFczWcgmzmk",
+    description: "Muffler staat voor authentieke Rock 'n Roll. Een coverband die verder gaat dan imiteren en daarbij geen enkele uitdaging uit de weg gaat. Gedreven door de liefde voor de klassiekers, zonder ook de lelijke eendjes uit het oog te verliezen."
   },
   {
     lookupName: "teddy's-jukebox",
