@@ -1,6 +1,4 @@
 {
-   "endOfLine": "auto",
-   "tabWidth": 3,
-   "quoteProps": "consistent",
-   "plugins": ["prettier-plugin-tailwindcss"]
+  "quoteProps": "consistent",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

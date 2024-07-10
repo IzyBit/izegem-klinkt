@@ -34,21 +34,21 @@ This will generate a `.output/public` directory containing the static files for 
 
 The line-up is stored in the `bands.ts` file in the `data` directory. To edit the line-up, simply modify the contents of this file. Each band is represented as an object with the following properties:
 
--  `lookupName`: A unique identifier for the band, used for the url. This should be a lowercase, hyphen-separated version of the band name.
+- `lookupName`: A unique identifier for the band, used for the url. This should be a lowercase, hyphen-separated version of the band name.
 
--  `location`: The location where the band will be performing.
+- `location`: The location where the band will be performing.
 
--  `time`: The time at which the band will be performing.
+- `time`: The time at which the band will be performing.
 
--  `bandPhoto`: The path to the band's photo, stored in the `public/bands` directory. Please use .webp format for optimal performance.
+- `bandPhoto`: The path to the band's photo, stored in the `public/bands` directory. Please use .webp format for optimal performance.
 
--  `bandName`: The name of the band.
+- `bandName`: The name of the band.
 
--  `website` (optional): The website of the band.
+- `website` (optional): The website of the band.
 
--  `video` (optional): The path to a video of the band. This can be a YouTube or Facebook link.
+- `video` (optional): The path to a video of the band. This can be a YouTube or Facebook link.
 
--  `description`: A brief description of the band.
+- `description`: A brief description of the band.
 
 ## Contributing
 
