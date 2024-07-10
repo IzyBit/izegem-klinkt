@@ -1,81 +1,84 @@
+<!-- eslint-disable vue/html-self-closing -->
 <template>
-  <div class="flex flex-col w-full">
-    <PageHeader></PageHeader>
-    <HamburgerMenu></HamburgerMenu>
-    <div
-      class="flex mt-40 justify-center gap-10 h-1/6 sm:11/12 lg:w-9/12 mx-auto"
-    >
-      <div class="flex flex-col lg:w-1/2 sm:w-10/12 justify-between">
-        <div class="mb-5">
-          <h1 class="text-5xl text-white font-bold">
-            {{ bandDetails.bandName }}
-          </h1>
-          <p class="mb-5 text-2xl font-bold">
-            {{ bandDetails.location }}
-            <span v-if="bandDetails.time">- {{ bandDetails.time }}</span>
+  <div>
+    <div class="flex w-full flex-col">
+      <PageHeader />
+      <HamburgerMenu />
+      <div
+        class="sm:11/12 mx-auto mt-40 flex h-1/6 justify-center gap-10 lg:w-9/12"
+      >
+        <div class="flex flex-col justify-between sm:w-10/12 lg:w-1/2">
+          <div class="mb-5">
+            <h1 class="text-5xl font-bold text-white">
+              {{ bandDetails.bandName }}
+            </h1>
+            <p class="mb-5 text-2xl font-bold">
+              {{ bandDetails.location }}
+              <span v-if="bandDetails.time">- {{ bandDetails.time }}</span>
+            </p>
+            <p class="leading-relaxed">{{ bandDetails.description }}</p>
+          </div>
+          <p v-if="bandDetails.website" class="mb-5 break-words">
+            Meer over {{ bandDetails.bandName }}:
+            <a target="_blank" :href="bandDetails.website" class="underline">{{
+              bandDetails.website
+            }}</a>
           </p>
-          <p class="leading-relaxed">{{ bandDetails.description }}</p>
+
+          <NuxtLink to="/programma">
+            <p class="flex gap-5 hover:underline">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.793 2.232a.75.75 0 0 1-.025 1.06L3.622 7.25h10.003a5.375 5.375 0 0 1 0 10.75H10.75a.75.75 0 0 1 0-1.5h2.875a3.875 3.875 0 0 0 0-7.75H3.622l4.146 3.957a.75.75 0 0 1-1.036 1.085l-5.5-5.25a.75.75 0 0 1 0-1.085l5.5-5.25a.75.75 0 0 1 1.06.025Z"
+                  clip-rule="evenodd"
+                /></svg
+              >Terug naar programma
+            </p>
+          </NuxtLink>
         </div>
-        <p v-if="bandDetails.website" class="mb-5 break-words">
-          Meer over {{ bandDetails.bandName }}:
-          <a target="_blank" :href="bandDetails.website" class="underline">{{
-            bandDetails.website
-          }}</a>
-        </p>
-
-        <NuxtLink to="/programma">
-          <p class="flex gap-5 hover:underline">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.793 2.232a.75.75 0 0 1-.025 1.06L3.622 7.25h10.003a5.375 5.375 0 0 1 0 10.75H10.75a.75.75 0 0 1 0-1.5h2.875a3.875 3.875 0 0 0 0-7.75H3.622l4.146 3.957a.75.75 0 0 1-1.036 1.085l-5.5-5.25a.75.75 0 0 1 0-1.085l5.5-5.25a.75.75 0 0 1 1.06.025Z"
-                clip-rule="evenodd"
-              /></svg
-            >Terug naar programma
-          </p>
-        </NuxtLink>
-      </div>
-      <div class="sm:hidden md:block w-3/5 rotate-1">
+        <div class="w-3/5 rotate-1 sm:hidden md:block">
+          <img
+            :src="bandDetails.bandPhoto"
+            alt="bandDetails.bandName"
+            class="h-full w-full object-cover"
+          />
+          <img
+            src="~/assets/images/note.webp"
+            alt="note"
+            class="absolute right-0 top-0 h-20 w-20 sm:hidden lg:block"
+          />
+        </div>
         <img
-          :src="bandDetails.bandPhoto"
-          alt="bandDetails.bandName"
-          class="w-full h-full object-cover"
-        />
-        <img
-          src="~/assets/images/note.webp"
+          src="~/assets/images/note2.webp"
           alt="note"
-          class="sm:hidden lg:block absolute w-20 h-20 top-0 right-0"
+          class="w-25 absolute bottom-10 right-5 h-20 sm:hidden lg:block"
         />
       </div>
-      <img
-        src="~/assets/images/note2.webp"
-        alt="note"
-        class="sm:hidden lg:block absolute w-25 h-20 right-5 bottom-10"
-      />
-    </div>
 
-    <div v-if="bandDetails.video" class="w-full flex justify-center mt-40">
-      <iframe
-        class="sm:w-96 lg:w-1/3 h-80"
-        :src="bandDetails.video"
-        title="Video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <div v-if="bandDetails.video" class="mt-40 flex w-full justify-center">
+        <iframe
+          class="h-80 sm:w-96 lg:w-1/3"
+          :src="bandDetails.video"
+          title="Video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
+      </div>
     </div>
+    <img
+      src="~/assets/images/samba.webp"
+      alt="note"
+      class="h-15 absolute left-40 w-20 -rotate-12 sm:hidden lg:block"
+    />
+    <PageFooter />
   </div>
-  <img
-    src="~/assets/images/samba.webp"
-    alt="note"
-    class="sm:hidden lg:block absolute w-20 h-15 left-40 -rotate-12"
-  />
-  <Footer></Footer>
 </template>
 
 <script setup>

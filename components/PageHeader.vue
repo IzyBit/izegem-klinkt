@@ -3,48 +3,48 @@
     <a
       href="/#home"
       aria-label="Back to home"
-      class="w-20 h-20 z-20 fixed top-5 left-5 back-to-top"
-    ></a>
+      class="back-to-top fixed left-5 top-5 z-20 h-20 w-20"
+    />
 
     <header
-      class="px-10 py-10 flex flex-row relative justify-end z-50 bg-transparent"
+      class="relative z-50 flex flex-row justify-end bg-transparent px-10 py-10"
     >
       <nav class="z-50">
-        <ul class="flex flex-row w-full gap-10">
+        <ul class="flex w-full flex-row gap-10">
           <li>
-            <a class="text-lg hover:underline font-bold uppercase" href="/#home"
+            <a class="text-lg font-bold uppercase hover:underline" href="/#home"
               >Home</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/programma"
               >Programma</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/#practical"
               >Praktisch</a
             >
           </li>
           <li>
-            <a class="text-lg hover:underline font-bold uppercase" href="/#info"
+            <a class="text-lg font-bold uppercase hover:underline" href="/#info"
               >Info</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/#about-us"
               >Ons verhaal</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/#contact"
               >Contact</a
             >

@@ -2,7 +2,7 @@
   <div class="lg:hidden xl:hidden">
     <button
       aria-label="Open mobile menu"
-      class="relative z-50 flex justify-end hover:cursor-pointer mb-10 px-7 pt-5"
+      class="relative z-50 mb-10 flex justify-end px-7 pt-5 hover:cursor-pointer"
       @click="isMobileMenuOpen = !isMobileMenuOpen"
     >
       <template v-if="isMobileMenuOpen">
@@ -36,44 +36,44 @@
     </button>
     <header
       :class="{ hidden: !isMobileMenuOpen }"
-      class="px-10 py-10 flex flex-row h-svh w-2/3 justify-end bg-black bg-opacity-95 absolute z-40 right-0 top-0"
+      class="absolute right-0 top-0 z-40 flex h-svh w-2/3 flex-row justify-end bg-black bg-opacity-95 px-10 py-10"
     >
-      <nav class="flex mt-10 items-end flex-col relative z-40">
-        <ul class="flex flex-col text-right gap-10 z-40">
+      <nav class="relative z-40 mt-10 flex flex-col items-end">
+        <ul class="z-40 flex flex-col gap-10 text-right">
           <li>
-            <a class="text-lg hover:underline font-bold uppercase" href="/#home"
+            <a class="text-lg font-bold uppercase hover:underline" href="/#home"
               >Home</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/programma"
               >Programma</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/#practical"
               >Praktisch</a
             >
           </li>
           <li>
-            <a class="text-lg hover:underline font-bold uppercase" href="/#info"
+            <a class="text-lg font-bold uppercase hover:underline" href="/#info"
               >Info</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/#about-us"
               >Ons verhaal</a
             >
           </li>
           <li>
             <a
-              class="text-lg hover:underline font-bold uppercase"
+              class="text-lg font-bold uppercase hover:underline"
               href="/#contact"
               >Contact</a
             >
@@ -83,6 +83,16 @@
     </header>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isMobileMenuOpen: false,
+    };
+  },
+};
+</script>
 
 <style scoped>
 #mobile-menu {
@@ -94,13 +104,3 @@
   pointer-events: none;
 }
 </style>
-
-<script>
-export default {
-  data() {
-    return {
-      isMobileMenuOpen: false,
-    };
-  },
-};
-</script>

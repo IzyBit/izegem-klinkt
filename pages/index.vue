@@ -1,15 +1,15 @@
 <template>
   <div>
-    <PageHeader></PageHeader>
-    <HamburgerMenu></HamburgerMenu>
-    <Hero></Hero>
-    <Practical></Practical>
-    <Divider :border="true"></Divider>
-    <Info></Info>
-    <Divider :border="true"></Divider>
-    <About></About>
-    <Divider :border="false"></Divider>
-    <Footer></Footer>
+    <PageHeader />
+    <HamburgerMenu />
+    <MainHero />
+    <MainPractical />
+    <MainSectionDivider :border="true" />
+    <MainInfo />
+    <MainSectionDivider :border="true" />
+    <MainAboutUs />
+    <MainSectionDivider :border="false" />
+    <PageFooter />
   </div>
 </template>
 
