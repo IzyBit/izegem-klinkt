@@ -1,11 +1,9 @@
 <template>
-  <section id="about-us" class="lg:w-7/12 xl:w-7/12 sm:w-full md:w-full sm:p-10 lg:p-0 m-auto flex justify-between">
-    <div class="sm:w-full 
-                md:w-full 
-                lg:w-1/2 
-                xl:w-1/2 
-
-                ">
+  <section
+    id="about-us"
+    class="lg:w-7/12 xl:w-7/12 sm:w-full md:w-full sm:p-10 lg:p-0 m-auto flex justify-between"
+  >
+    <div class="sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
       <h2 class="text-6xl font-bold mb-2 text-white">Ons Verhaal</h2>
       <p>
         Welkom bij Izegem Klinkt, een betoverende muzikale tournée in de
@@ -29,7 +27,7 @@
         :numVisible="5"
         :circular="true"
         containerStyle="max-width: 640px"
-        autoPlay=true
+        :autoPlay="true"
         :showThumbnails="false"
       >
         <template #item="slotProps">

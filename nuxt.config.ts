@@ -1,18 +1,21 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ['nuxt-primevue', "@nuxt/image"],
-  primevue: {
-    importPT: { from: '~/presets/lara' },
+  devtools: { enabled: false },
+  modules: ["nuxt-primevue", "@nuxt/image"],
+
+  // Nuxt Image module configuration
+  image: {
+    format: ["webp"],
+    quality: 80,
   },
-  css: [
-    'primevue/resources/themes/aura-light-green/theme.css',
-    'primeicons/primeicons.css',
-    '~/assets/css/main.css',
-  ],
+
+  css: ["~/assets/css/main.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-})
+
+  compatibilityDate: "2024-07-10",
+});
