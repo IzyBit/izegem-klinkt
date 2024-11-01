@@ -26,7 +26,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <p>0473 52 39 53</p>
+              <a href="tel:0473 52 39 53">0473 52 39 53</a>
             </li>
             <li class="flex flex-row items-center gap-2">
               <svg
@@ -129,7 +129,15 @@
           >
         </li>
       </ul>
-      <span class="sm:mt-5">&copy; Lukas Olivier</span>
+      <span class="sm:mt-5"
+        >&copy;
+        <a
+          target="_blank"
+          aria-label="Visit the website of Lukas Olivier, the developer of this website"
+          href="https://lukasolivier.be"
+          >Lukas Olivier</a
+        ></span
+      >
     </nav>
   </footer>
 </template>

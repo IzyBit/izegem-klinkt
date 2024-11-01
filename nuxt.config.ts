@@ -2,7 +2,7 @@ import Aura from "@primevue/themes/aura";
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: [
     "@primevue/nuxt-module",
     "@nuxt/image",
@@ -54,12 +54,12 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Izegem Klinkt - Muzikale Tournée in de Pekkersstad. Programma 4 mei 2024. Gratis toegang. 14 deelnemende cafés. 14 bands. 1 stad. 1 muzikale tournée.",
+            "Izegem Klinkt - Muzikale Tournée in de Pekkersstad. Programma 4 mei 2025. Gratis toegang. 14 deelnemende cafés. 14 bands. 1 stad. 1 muzikale tournée.",
         },
         {
           name: "keywords",
           content:
-            "Izegem Klinkt, Izegem, Muziek, Pekkersstad, Tournée, 4 mei 2024, Gratis, 14 cafés, 14 bands, 1 stad, 1 muzikale tournée, kroegentocht, tocht, kroegen, programma",
+            "Izegem Klinkt, Izegem, Muziek, Pekkersstad, Tournée, 4 mei 2025, Gratis, 14 cafés, 14 bands, 1 stad, 1 muzikale tournée, kroegentocht, tocht, kroegen, programma",
         },
         { hid: "og-type", property: "og:type", content: "website" },
         {
@@ -71,7 +71,7 @@ export default defineNuxtConfig({
           hid: "og-desc",
           property: "og:description",
           content:
-            "Izegem Klinkt - Muzikale Tournée in de Pekkersstad. Programma 4 mei 2024. Gratis toegang. 14 deelnemende cafés. 14 bands. 1 stad. 1 muzikale tournée.",
+            "Izegem Klinkt - Muzikale Tournée in de Pekkersstad. Programma 4 mei 2025. Gratis toegang. 14 deelnemende cafés. 14 bands. 1 stad. 1 muzikale tournée.",
         },
         {
           hid: "og-image",
@@ -142,5 +142,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: "2024-07-10",
+  compatibilityDate: "2025-07-10",
 });

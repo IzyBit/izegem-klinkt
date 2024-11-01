@@ -20,7 +20,7 @@
     >
       <img class="hero-img z-30" src="/images/footer-logo.webp" alt="Logo" />
       <h1 class="mt-10 text-center text-4xl font-bold">
-        17 MEI | GRATIS TOEGANG
+        16 MEI | GRATIS TOEGANG
       </h1>
     </div>
   </div>

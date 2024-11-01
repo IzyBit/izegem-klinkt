@@ -76,7 +76,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Programma van IzegemKlinkt 2024",
+      content: "Programma van IzegemKlinkt 2025",
     },
   ],
 });

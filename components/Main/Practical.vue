@@ -22,7 +22,7 @@
             clip-rule="evenodd"
           />
         </svg>
-        <p class="text-xl">17 mei 2024</p>
+        <p class="text-xl">17 mei 2025</p>
         <p class="text-lg">19u00 - 01u00</p>
       </li>
       <li class="flex flex-col items-center justify-center">

@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/html-self-closing -->
 <template>
   <div>
     <div class="flex w-full flex-col">
@@ -86,8 +85,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 const bands = ref({
   2024: [],
   2025: [],
@@ -96,19 +93,23 @@ const bands = ref({
 onMounted(async () => {
   const importedBands = await import("~/data/bands").then((m) => m.default);
   bands.value = importedBands;
-  console.log(bands.value);
 });
 
 const route = useRoute();
 const bandName = route.params.name;
 
-// Add this computed property to find the matching band
+// Add this computed property to find the matching band across all years
 const bandDetails = computed(() => {
-  return bands.value[2024].find((band) => band.lookupName === bandName);
+  for (const year in bands.value) {
+    const band = bands.value[year].find((band) => band.lookupName === bandName);
+    if (band) {
+      return band;
+    }
+  }
+  return null;
 });
 
 useHead({
-  // Fix the title concatenation
   title: computed(() => `Programma - ${bandDetails.value?.bandName}`),
 });
 </script>
