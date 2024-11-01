@@ -183,7 +183,7 @@ const bands2024: Band[] = [
 
 const bands2025: Band[] = [];
 
-export const bands = {
+export default {
   "2025": bands2025,
   "2024": bands2024,
 };

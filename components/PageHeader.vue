@@ -57,7 +57,7 @@
 
 <style scoped>
 .back-to-top {
-  background-image: url("~/assets/images/footer-logo.webp");
+  background-image: url("/images/footer-logo.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

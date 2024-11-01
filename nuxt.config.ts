@@ -22,6 +22,10 @@ export default defineNuxtConfig({
     head: {
       title: "Izegem Klinkt",
       titleTemplate: "%s - Izegem Klinkt",
+
+      htmlAttrs: {
+        lang: "nl",
+      },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -71,6 +75,7 @@ export default defineNuxtConfig({
   },
 
   primevue: {
+    include: ["Galleria"],
     options: {
       ripple: false,
       inputVariant: "outlined",
@@ -91,6 +96,28 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+
+  build: {
+    transpile: ["primevue"],
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        chunks: "all",
+        automaticNameDelimiter: ".",
+        maxSize: 244000,
+      },
+    },
+  },
+
+  nitro: {
+    compressPublicAssets: true,
+    minify: true,
+    routeRules: {
+      "/images/**": { headers: { "cache-control": "max-age=31536000" } },
+      "/fonts/**": { headers: { "cache-control": "max-age=31536000" } },
+      "/_nuxt/**": { headers: { "cache-control": "max-age=31536000" } },
     },
   },
 

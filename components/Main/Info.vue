@@ -48,7 +48,7 @@
       class="w-1/4 -rotate-2 object-cover transition-transform duration-500 ease-in-out hover:rotate-0 sm:hidden md:hidden lg:block"
     >
       <a target="_blank" href="/BOEKJE-IZEGEMKLINKT-2024.pdf"
-        ><img src="~/assets/images/boekje.webp" alt="boekje"
+        ><img src="/images/boekje.webp" alt="boekje"
       /></a>
     </div>
   </section>

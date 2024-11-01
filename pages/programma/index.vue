@@ -32,7 +32,7 @@
       <!-- Band cards with transition -->
       <transition name="fade-slide" mode="out-in">
         <div
-          v-if="bands[selectedYear].length > 0"
+          v-if="bands[selectedYear]?.length > 0"
           :key="selectedYear"
           class="flex h-full flex-row flex-wrap gap-10 sm:justify-center lg:justify-start"
         >
@@ -58,14 +58,27 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { bands } from "@/data/bands";
+const bands = ref({
+  "2024": [],
+  "2025": [],
+});
 
-const years = Object.keys(bands).sort().reverse();
-const selectedYear = ref(years[0]);
+const years = computed(() => Object.keys(bands.value).sort().reverse());
+const selectedYear = ref("2024");
+
+onMounted(async () => {
+  const importedBands = await import("~/data/bands").then((m) => m.default);
+  bands.value = importedBands;
+});
 
 useHead({
   title: "Programma",
+  meta: [
+    {
+      name: "description",
+      content: "Programma van IzegemKlinkt 2024",
+    },
+  ],
 });
 </script>
 

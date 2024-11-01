@@ -2,7 +2,7 @@
   <footer class="w-100 footer mt-80 px-20 py-10">
     <div id="top-row" class="mb-10 flex justify-between">
       <img
-        src="~/assets/images/footer-logo.webp"
+        src="/images/footer-logo.webp"
         class="w-40 object-contain sm:hidden md:hidden lg:block"
         alt="logo"
       />

@@ -12,6 +12,9 @@
       class="h-full w-full object-cover brightness-50"
       :src="bandPhoto"
       alt="bandName"
+      width="320"
+      height="320"
+      loading="lazy"
     />
     <p
       class="text-s relative bottom-0 z-10 w-full bg-black bg-opacity-50 p-2 font-bold uppercase text-white"

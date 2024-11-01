@@ -10,18 +10,18 @@
         <div class="flex flex-col justify-between sm:w-10/12 lg:w-1/2">
           <div class="mb-5">
             <h1 class="text-5xl font-bold text-white">
-              {{ bandDetails.bandName }}
+              {{ bandDetails?.bandName }}
             </h1>
             <p class="mb-5 text-2xl font-bold">
-              {{ bandDetails.location }}
-              <span v-if="bandDetails.time">- {{ bandDetails.time }}</span>
+              {{ bandDetails?.location }}
+              <span v-if="bandDetails?.time">- {{ bandDetails?.time }}</span>
             </p>
-            <p class="leading-relaxed">{{ bandDetails.description }}</p>
+            <p class="leading-relaxed">{{ bandDetails?.description }}</p>
           </div>
-          <p v-if="bandDetails.website" class="mb-5 break-words">
-            Meer over {{ bandDetails.bandName }}:
-            <a target="_blank" :href="bandDetails.website" class="underline">{{
-              bandDetails.website
+          <p v-if="bandDetails?.website" class="mb-5 break-words">
+            Meer over {{ bandDetails?.bandName }}:
+            <a target="_blank" :href="bandDetails?.website" class="underline">{{
+              bandDetails?.website
             }}</a>
           </p>
 
@@ -43,28 +43,31 @@
           </NuxtLink>
         </div>
         <div class="w-3/5 rotate-1 sm:hidden md:block">
-          <img
-            :src="bandDetails.bandPhoto"
-            alt="bandDetails.bandName"
+          <NuxtImg
+            :src="bandDetails?.bandPhoto"
+            :alt="bandDetails?.bandName"
             class="h-full w-full object-cover"
+            loading="lazy"
           />
-          <img
-            src="~/assets/images/note.webp"
+          <NuxtImg
+            src="/images/note.webp"
             alt="note"
             class="absolute right-0 top-0 h-20 w-20 sm:hidden lg:block"
+            loading="lazy"
           />
         </div>
-        <img
-          src="~/assets/images/note2.webp"
+        <NuxtImg
+          src="/images/note2.webp"
           alt="note"
           class="w-25 absolute bottom-10 right-5 h-20 sm:hidden lg:block"
+          loading="lazy"
         />
       </div>
 
-      <div v-if="bandDetails.video" class="mt-40 flex w-full justify-center">
+      <div v-if="bandDetails?.video" class="mt-40 flex w-full justify-center">
         <iframe
           class="h-80 sm:w-96 lg:w-1/3"
-          :src="bandDetails.video"
+          :src="bandDetails?.video"
           title="Video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -72,10 +75,11 @@
         />
       </div>
     </div>
-    <img
-      src="~/assets/images/samba.webp"
+    <NuxtImg
+      src="/images/samba.webp"
       alt="note"
       class="h-15 absolute left-40 w-20 -rotate-12 sm:hidden lg:block"
+      loading="lazy"
     />
     <PageFooter />
   </div>
@@ -83,14 +87,28 @@
 
 <script setup>
 import { ref } from "vue";
-import { bands } from "~/data/bands.ts";
+
+const bands = ref({
+  2024: [],
+  2025: [],
+});
+
+onMounted(async () => {
+  const importedBands = await import("~/data/bands").then((m) => m.default);
+  bands.value = importedBands;
+  console.log(bands.value);
+});
 
 const route = useRoute();
-
 const bandName = route.params.name;
-const bandDetails = ref(bands.find((band) => band.lookupName === bandName));
+
+// Add this computed property to find the matching band
+const bandDetails = computed(() => {
+  return bands.value[2024].find((band) => band.lookupName === bandName);
+});
 
 useHead({
-  title: "Programma + bandDetails.bandName",
+  // Fix the title concatenation
+  title: computed(() => `Programma - ${bandDetails.value?.bandName}`),
 });
 </script>
