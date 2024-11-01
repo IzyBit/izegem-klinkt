@@ -9,7 +9,7 @@ interface Band {
   description: string;
 }
 
-export const bands: Band[] = [
+const bands2024: Band[] = [
   {
     lookupName: "middle-of-nowhere",
     location: "Grote Markt",
@@ -180,3 +180,10 @@ export const bands: Band[] = [
       "Stomende bluesrockband met roots in Ingelmunster brengt de blues in het onversneden westvlaams, uniek met een vrolijke insteek! Appelblauwzjigroen bestaat uit 5 ervaren blues muzikanten die hun liefde voor de bluesrock en het spekkig West-Vlaams gecombineerd hebben in een band die garant staat voor vette ambiance op ieder podium. 14. appelblauwzjigroen",
   },
 ];
+
+const bands2025: Band[] = [];
+
+export const bands = {
+  "2025": bands2025,
+  "2024": bands2024,
+};

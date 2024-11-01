@@ -1,7 +1,10 @@
+import Aura from "@primevue/themes/aura";
+import { defineNuxtConfig } from "nuxt/config";
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
-    "nuxt-primevue",
+    "@primevue/nuxt-module",
     "@nuxt/image",
     "@nuxt/eslint",
     "@nuxtjs/seo",
@@ -60,6 +63,25 @@ export default defineNuxtConfig({
           content: "https://izegemklinkt.be/logo.png",
         },
       ],
+    },
+  },
+
+  site: {
+    url: "https://izegemklinkt.be",
+  },
+
+  primevue: {
+    options: {
+      ripple: false,
+      inputVariant: "outlined",
+      theme: {
+        preset: Aura,
+        options: {
+          prefix: "p",
+          darkModeSelector: "system",
+          cssLayer: false,
+        },
+      },
     },
   },
 
