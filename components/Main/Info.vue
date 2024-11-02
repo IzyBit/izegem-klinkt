@@ -35,7 +35,7 @@
           door te nemen.</span
         >
         Zo mist u geen enkele favoriet en hoeft u de avond zelf alleen maar te
-        genieten! Het enige wat u nu nog hoeft te doen is 17 mei 2025 met stip
+        genieten! Het enige wat u nu nog hoeft te doen is 16 mei 2025 met stip
         in uw agenda aanduiden. Kom erbij en wees welkom! Geniet met volle
         teugen van Izegem Klinkt!
         <br />
