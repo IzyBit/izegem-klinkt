@@ -25,7 +25,7 @@
 
       <div class="mt-20 text-center text-2xl">
         <h2
-          class="bg-primary inline-block rounded-lg p-2 px-4 pt-4 text-4xl text-white sm:text-xl md:text-2xl lg:text-4xl"
+          class="inline-block rounded-lg bg-primary p-2 px-4 pt-4 text-4xl text-white sm:text-xl md:text-2xl lg:text-4xl"
         >
           Wanted! Regionaal talent!
         </h2>
