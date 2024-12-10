@@ -21,7 +21,15 @@ export default {
       xl: "1200px",
       // => @media (min-width: 1200px) { ... }
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#bc2b26",
+        secondary: {
+          100: "#E2E2D5",
+          200: "#888883",
+        },
+      },
+    },
   },
   plugins: [],
 };
