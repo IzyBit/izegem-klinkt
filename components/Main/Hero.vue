@@ -23,6 +23,7 @@
         16 MEI | GRATIS TOEGANG
       </h1>
 
+      <!-- 
       <div class="mt-10 text-center text-2xl">
         <h2
           class="inline-block rounded-lg bg-primary p-2 px-4 pt-4 text-4xl text-white sm:text-xl md:text-2xl lg:text-4xl"
@@ -40,6 +41,7 @@
           Contacteer Ons!
         </NuxtLink>
       </div>
+       -->
     </div>
   </div>
 </template>
