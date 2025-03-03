@@ -46,7 +46,7 @@
             :time="lineUpItem.time"
           />
         </div>
-        <div class="min-h-64" v-else key="no-bands">
+        <div v-else key="no-bands" class="min-h-64">
           <p class="w-full text-center text-2xl font-semibold text-white">
             Komt binnenkort...
           </p>
