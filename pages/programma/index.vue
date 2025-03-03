@@ -34,7 +34,7 @@
         <div
           v-if="bands[selectedYear]?.length > 0"
           :key="selectedYear"
-          class="flex h-full flex-row flex-wrap gap-10 sm:justify-center lg:justify-start"
+          class="flex h-full min-h-64 flex-row flex-wrap gap-10 sm:justify-center lg:justify-start"
         >
           <BandCard
             v-for="lineUpItem in bands[selectedYear]"
@@ -46,7 +46,7 @@
             :time="lineUpItem.time"
           />
         </div>
-        <div v-else key="no-bands">
+        <div class="min-h-64" v-else key="no-bands">
           <p class="w-full text-center text-2xl font-semibold text-white">
             Komt binnenkort...
           </p>
@@ -64,7 +64,7 @@ const bands = ref({
 });
 
 const years = computed(() => Object.keys(bands.value).sort().reverse());
-const selectedYear = ref("2024");
+const selectedYear = ref("2025");
 
 onMounted(async () => {
   const importedBands = await import("~/data/bands").then((m) => m.default);
