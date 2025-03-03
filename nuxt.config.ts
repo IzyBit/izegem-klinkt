@@ -1,5 +1,6 @@
 import Aura from "@primevue/themes/aura";
 import { defineNuxtConfig } from "nuxt/config";
+import bands from "./data/bands";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -92,8 +93,37 @@ export default defineNuxtConfig({
     },
   },
 
+  sitemap: {
+    siteUrl: "https://www.izegemklinkt.be",
+    generateOnBuild: true,
+    urls: () => {
+      // Get all bands from all years
+      const bandPages = Object.values(bands).flatMap((yearBands) =>
+        yearBands.map((band) => ({
+          url: `/programma/${band.lookupName}`,
+          changefreq: "monthly",
+          priority: 0.8,
+        })),
+      );
+
+      return [
+        {
+          url: "/",
+          changefreq: "weekly",
+          priority: 1,
+        },
+        {
+          url: "/programma",
+          changefreq: "weekly",
+          priority: 0.9,
+        },
+        ...bandPages,
+      ];
+    },
+  },
+
   site: {
-    url: "https://www.www.izegemklinkt.be",
+    url: "https://www.izegemklinkt.be",
   },
 
   primevue: {

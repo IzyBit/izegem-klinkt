@@ -114,7 +114,7 @@ const bands2024: Band[] = [
       "Geen gebaande tracks of versleten covers bij Black Cat Biscuit, maar eenverrassende, soms foxy cocktail van frisse liedjes gemarineerd in een “specialegumbo hot saus”, gebracht door vijf gedreven muzikanten! Black Cat Biscuithoudt je boeien door een grote verscheidenheid aan verschillende bluesstijlenen reist af naar een onvergetelijke ervaring, vol onuitputtelijke energie. Eensnufje City Blues, een portie rauwe slide, een vleugje Jazz, Swamp Blues,Boogie, Texas Blues, Shuff le, Funk, ... Black Cat Biscuit brengt verhalen uit hetleven, opvallend herkenbaar en soms met een knipoog.",
   },
   {
-    lookupName: "gudinöv",
+    lookupName: "gudinov",
     location: "Plan B",
     time: "21u15-00u",
     bandPhoto: "/bands/gudinov.webp",
