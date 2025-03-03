@@ -110,6 +110,10 @@ const bandDetails = computed(() => {
 });
 
 useHead({
-  title: computed(() => `Programma - ${bandDetails.value?.bandName}`),
+  title: computed(() => {
+    return bandDetails.value?.bandName
+      ? `Programma - ${bandDetails.value.bandName} - Izegem Klinkt`
+      : "Programma - Izegem Klinkt";
+  }),
 });
 </script>

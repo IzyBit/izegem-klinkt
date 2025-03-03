@@ -101,7 +101,7 @@ export default defineNuxtConfig({
       const bandPages = Object.values(bands).flatMap((yearBands) =>
         yearBands.map((band) => ({
           url: `/programma/${band.lookupName}`,
-          changefreq: "monthly",
+          changefreq: "yearly",
           priority: 0.8,
         })),
       );
@@ -109,12 +109,12 @@ export default defineNuxtConfig({
       return [
         {
           url: "/",
-          changefreq: "weekly",
+          changefreq: "yearly",
           priority: 1,
         },
         {
           url: "/programma",
-          changefreq: "weekly",
+          changefreq: "yearly",
           priority: 0.9,
         },
         ...bandPages,
