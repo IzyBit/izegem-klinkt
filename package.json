@@ -14,7 +14,7 @@
     "lintfix": "eslint . --fix && prettier --write --list-different ."
   },
   "dependencies": {
-    "@nuxtjs/seo": "2.0.0-rc.23",
+    "@nuxtjs/seo": "2.2.0",
     "@primevue/themes": "^4.2.0",
     "mime-types": "^2.1.35",
     "nuxt": "^3.13.2",
