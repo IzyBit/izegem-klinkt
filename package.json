@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "^8.12.2",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.30.0",
     "nuxt-primevue": "^3.0.0",
