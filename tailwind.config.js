@@ -9,6 +9,8 @@ export default {
     "./error.vue",
   ],
   theme: {
+    // I know this is wrong, this project was made a long time ago and I didn't know how to use tailwindcss properly
+
     screens: {
       sm: "1px", // applies styles for screens wider than or equal to 640px
 
