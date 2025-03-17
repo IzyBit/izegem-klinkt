@@ -1,31 +1,51 @@
 <template>
-  <div>
-    <div class="flex w-full flex-col">
-      <PageHeader />
-      <HamburgerMenu />
+  <div class="relative min-h-screen">
+    <PageHeader />
+    <HamburgerMenu />
+
+    <!-- Main content container -->
+    <div
+      class="mx-auto px-4 pb-20 pt-20 sm:w-11/12 md:w-9/12 md:pt-32 lg:pt-40"
+    >
+      <!-- Band information section -->
       <div
-        class="sm:11/12 mx-auto mt-40 flex h-1/6 justify-center gap-10 lg:w-9/12"
+        class="flex gap-6 sm:flex-col md:gap-8 lg:gap-12 xl:flex-row xl:gap-16"
       >
-        <div class="flex flex-col justify-between sm:w-10/12 lg:w-1/2">
-          <div class="mb-5">
-            <h1 class="text-5xl font-bold text-white">
+        <!-- Band details -->
+        <div class="w-full xl:w-1/2">
+          <div class="mb-4 md:mb-6">
+            <h1
+              class="mb-2 text-2xl font-bold text-white md:text-4xl lg:text-5xl"
+            >
               {{ bandDetails?.bandName }}
             </h1>
-            <p class="mb-5 text-2xl font-bold">
+            <p class="mb-3 text-lg font-bold md:mb-4 md:text-2xl">
               {{ bandDetails?.location }}
               <span v-if="bandDetails?.time">- {{ bandDetails?.time }}</span>
             </p>
-            <p class="leading-relaxed">{{ bandDetails?.description }}</p>
+            <p class="text-base leading-relaxed md:text-lg">
+              {{ bandDetails?.description }}
+            </p>
           </div>
-          <p v-if="bandDetails?.website" class="mb-5 break-words">
+
+          <p
+            v-if="bandDetails?.website"
+            class="mb-4 break-words text-base md:mb-6 md:text-lg"
+          >
             Meer over {{ bandDetails?.bandName }}:
-            <a target="_blank" :href="bandDetails?.website" class="underline">{{
-              bandDetails?.website
-            }}</a>
+            <a
+              target="_blank"
+              :href="bandDetails?.website"
+              class="underline transition-colors hover:text-gray-300"
+            >
+              {{ bandDetails?.website }}
+            </a>
           </p>
 
-          <NuxtLink to="/programma">
-            <p class="flex gap-5 hover:underline">
+          <NuxtLink to="/programma" class="mb-6 inline-block md:mb-10">
+            <p
+              class="flex items-center gap-2 text-base hover:underline md:text-lg"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -36,50 +56,68 @@
                   fill-rule="evenodd"
                   d="M7.793 2.232a.75.75 0 0 1-.025 1.06L3.622 7.25h10.003a5.375 5.375 0 0 1 0 10.75H10.75a.75.75 0 0 1 0-1.5h2.875a3.875 3.875 0 0 0 0-7.75H3.622l4.146 3.957a.75.75 0 0 1-1.036 1.085l-5.5-5.25a.75.75 0 0 1 0-1.085l5.5-5.25a.75.75 0 0 1 1.06.025Z"
                   clip-rule="evenodd"
-                /></svg
-              >Terug naar programma
+                />
+              </svg>
+              Terug naar programma
             </p>
           </NuxtLink>
         </div>
-        <div class="w-3/5 rotate-1 sm:hidden md:block">
+
+        <!-- Band photo -->
+        <div class="relative w-full xl:w-1/2">
           <NuxtImg
+            v-if="bandDetails?.bandPhoto"
             :src="bandDetails?.bandPhoto"
             :alt="bandDetails?.bandName"
-            class="h-full w-full object-cover"
+            class="w-full rotate-1 transform rounded-md object-cover shadow-lg transition-transform hover:rotate-0 md:max-h-[500px]"
             loading="lazy"
           />
+
+          <!-- Decorative note on image -->
           <NuxtImg
             src="/images/note.webp"
             alt="note"
-            class="absolute right-0 top-0 h-20 w-20 sm:hidden lg:block"
+            class="absolute -right-4 -top-6 hidden h-12 w-12 md:-right-8 md:-top-10 md:block md:h-16 md:w-16 lg:h-20 lg:w-20"
             loading="lazy"
           />
         </div>
+      </div>
+
+      <!-- Decorative elements -->
+      <div class="relative">
+        <NuxtImg
+          src="/images/samba.webp"
+          alt="decorative note"
+          class="absolute -left-2 top-52 hidden h-auto w-14 -rotate-12 md:block md:w-16 lg:w-20"
+          loading="lazy"
+        />
+
         <NuxtImg
           src="/images/note2.webp"
-          alt="note"
-          class="w-25 absolute bottom-10 right-5 h-20 sm:hidden lg:block"
+          alt="decorative note"
+          class="absolute -right-2 -top-10 hidden h-12 w-12 md:block md:h-16 md:w-16 lg:h-20 lg:w-20"
           loading="lazy"
         />
       </div>
 
-      <div v-if="bandDetails?.video" class="mt-40 flex w-full justify-center">
-        <iframe
-          class="h-80 sm:w-96 lg:w-1/3"
-          :src="bandDetails?.video"
-          title="Video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        />
+      <!-- Video section -->
+      <div v-if="bandDetails?.video" class="mt-10 md:mt-16 lg:mt-20">
+        <h2 class="mb-4 text-xl font-bold text-white md:mb-6 md:text-2xl">
+          Video
+        </h2>
+        <div class="mx-auto max-w-full md:max-w-4xl">
+          <iframe
+            class="aspect-video w-full rounded-md shadow-lg"
+            :src="bandDetails?.video"
+            title="Video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
+        </div>
       </div>
     </div>
-    <NuxtImg
-      src="/images/samba.webp"
-      alt="note"
-      class="h-15 absolute left-40 w-20 -rotate-12 sm:hidden lg:block"
-      loading="lazy"
-    />
+
     <PageFooter />
   </div>
 </template>
@@ -98,7 +136,7 @@ onMounted(async () => {
 const route = useRoute();
 const bandName = route.params.name;
 
-// Add this computed property to find the matching band across all years
+// Find the matching band across all years
 const bandDetails = computed(() => {
   for (const year in bands.value) {
     const band = bands.value[year].find((band) => band.lookupName === bandName);

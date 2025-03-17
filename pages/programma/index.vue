@@ -44,6 +44,7 @@
             :band-photo="lineUpItem.bandPhoto"
             :band-name="lineUpItem.bandName"
             :time="lineUpItem.time"
+            :lookup-name="lineUpItem.lookupName"
           />
         </div>
         <div v-else key="no-bands" class="min-h-64">
@@ -69,6 +70,7 @@ const selectedYear = ref("2025");
 onMounted(async () => {
   const importedBands = await import("~/data/bands").then((m) => m.default);
   bands.value = importedBands;
+  console.log(bands.value);
 });
 
 useHead({

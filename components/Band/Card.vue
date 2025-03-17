@@ -43,12 +43,15 @@ export default defineNuxtComponent({
       type: String,
       required: true,
     },
+    lookupName: {
+      type: String,
+      required: true,
+    },
   },
 
   methods: {
     ViewDetailsPage() {
-      const urlName = this.bandName.toLowerCase().replace(/ /g, "-");
-      this.$router.push(`/programma/${urlName}`);
+      this.$router.push(`/programma/${this.lookupName}`);
     },
   },
 });
