@@ -5,7 +5,13 @@ import bands from "./data/bands";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@primevue/nuxt-module", "@nuxt/image", "@nuxt/eslint", "@nuxtjs/robots", "@nuxtjs/sitemap", "@nuxthub/core"],
+  modules: [
+    "@primevue/nuxt-module",
+    "@nuxt/image",
+    "@nuxt/eslint",
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
+  ],
 
   // Nuxt Image module configuration
   image: {
@@ -121,14 +127,17 @@ export default defineNuxtConfig({
     url: "https://www.izegemklinkt.be",
   },
 
+  // Build for vercel
+  nitro: {
+    preset: "vercel",
+  },
+
   primevue: {
     options: {
       theme: {
         preset: Aura,
       },
     },
-    // I only need Galleria
-    components: ["Galleria"],
   },
 
   css: ["~/assets/css/main.css"],
