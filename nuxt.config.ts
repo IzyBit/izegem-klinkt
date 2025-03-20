@@ -151,26 +151,5 @@ export default defineNuxtConfig({
     },
   },
 
-  build: {
-    transpile: ["primevue"],
-    optimization: {
-      splitChunks: {
-        chunks: "all",
-        automaticNameDelimiter: ".",
-        maxSize: 244000,
-      },
-    },
-  },
-
-  nitro: {
-    compressPublicAssets: true,
-    minify: true,
-    routeRules: {
-      "/images/**": { headers: { "cache-control": "max-age=31536000" } },
-      "/fonts/**": { headers: { "cache-control": "max-age=31536000" } },
-      "/_nuxt/**": { headers: { "cache-control": "max-age=31536000" } },
-    },
-  },
-
   compatibilityDate: "2025-07-10",
 });
