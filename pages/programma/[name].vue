@@ -156,8 +156,6 @@ const formattedDescription = computed(() => {
     .replace(/\n{3,}/g, "\n\n") // Remove excess newlines
     .trim(); // Remove trailing whitespace
 
-  console.log(res);
-
   return res;
 });
 

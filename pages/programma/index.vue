@@ -69,7 +69,6 @@ const selectedYear = ref("2025");
 onMounted(async () => {
   const importedBands = await import("~/data/bands").then((m) => m.default);
   bands.value = importedBands;
-  console.log(bands.value);
 });
 
 useHead({

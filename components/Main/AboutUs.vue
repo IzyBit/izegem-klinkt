@@ -56,10 +56,5 @@ const images = ref([]);
 
 onMounted(async () => {
   images.value = await import("~/data/gallery-images").then((m) => m.default);
-  console.log(images.value);
-});
-
-watch(images, (newVal) => {
-  console.log("Images updated:", newVal);
 });
 </script>
