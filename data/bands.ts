@@ -185,6 +185,7 @@ const bands2025: Band[] = [
   {
     lookupName: "kiko-and-the-quarantines",
     location: "Lagaar",
+    time: "21u-0u",
     bandPhoto: "/bands/kiko-and-the-quarantines.jpeg",
     bandName: "Kiko & The Quarantines",
     website: "https://www.kikoandthequarantines.com/",

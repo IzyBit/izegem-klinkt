@@ -34,7 +34,7 @@
         <div
           v-if="bands[selectedYear]?.length > 0"
           :key="selectedYear"
-          class="grid gap-x-8 gap-y-16 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+          class="mx-auto grid w-full justify-items-center gap-x-8 gap-y-16 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
         >
           <BandCard
             v-for="lineUpItem in bands[selectedYear]"
