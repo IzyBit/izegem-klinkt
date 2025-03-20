@@ -36,15 +36,20 @@
           :key="selectedYear"
           class="mx-auto grid w-full justify-items-center gap-x-8 gap-y-16 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
         >
-          <BandCard
+          <div
             v-for="lineUpItem in bands[selectedYear]"
             :key="lineUpItem.lookupName"
-            :location="lineUpItem.location"
-            :band-photo="lineUpItem.bandPhoto"
-            :band-name="lineUpItem.bandName"
-            :time="lineUpItem.time"
-            :lookup-name="lineUpItem.lookupName"
-          />
+            class="flex h-full w-full"
+          >
+            <BandCard
+              :location="lineUpItem.location"
+              :band-photo="lineUpItem.bandPhoto"
+              :band-name="lineUpItem.bandName"
+              :time="lineUpItem.time"
+              :lookup-name="lineUpItem.lookupName"
+              class="flex-1"
+            />
+          </div>
         </div>
         <div v-else key="no-bands" class="min-h-64">
           <p class="w-full text-center text-2xl font-semibold text-white">
