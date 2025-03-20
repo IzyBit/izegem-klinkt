@@ -34,12 +34,11 @@
         <div
           v-if="bands[selectedYear]?.length > 0"
           :key="selectedYear"
-          class="flex h-full min-h-64 flex-row flex-wrap gap-10 sm:justify-center lg:justify-start"
+          class="2xl:grid-cols-4 grid gap-x-8 gap-y-16 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
         >
           <BandCard
             v-for="lineUpItem in bands[selectedYear]"
             :key="lineUpItem.lookupName"
-            class="flex-shrink flex-grow"
             :location="lineUpItem.location"
             :band-photo="lineUpItem.bandPhoto"
             :band-name="lineUpItem.bandName"
@@ -58,10 +57,10 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const bands = ref({
-  "2024": [],
-  "2025": [],
+  2024: [],
+  2025: [],
 });
 
 const years = computed(() => Object.keys(bands.value).sort().reverse());

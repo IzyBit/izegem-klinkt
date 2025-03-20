@@ -181,7 +181,125 @@ const bands2024: Band[] = [
   },
 ];
 
-const bands2025: Band[] = [];
+const bands2025: Band[] = [
+  {
+    lookupName: "kiko-and-the-quarantines",
+    location: "???",
+    time: "???",
+    bandPhoto: "/bands/kiko-and-the-quarantines.jpeg",
+    bandName: "Kiko & The Quarantines",
+    website: "https://www.kikoandthequarantines.com/",
+    video: "https://youtube.com/embed/Pr2etL-_U9A",
+    description:
+      "Kiko & The Quarantines betekent sfeervolle covers, klassiekers en vergeten parels van vroeger en nu gebracht door 3 professionele en uiterst gepassioneerde muzikanten! Elk met tonnen speel- en podiumervaring. Het geesteskind van klassiek gitariste Nicky Frissyn en haar man, zanger en gerenommeerd MC, Koen 'MC Mota' Meuris zag het levenslicht tijdens de Covid 19 lockdown. Daar vonden ze elkaar voor het eerst ook muzikaal na vele jaren apart en met hun eigen projecten in de industrie actief te zijn geweest. Onder streng toeziend oog van huiskat Kiko ontstond in volle quarantaine 'Kiko & The Quarantines'. Met gitaar, sax, trompet, dwarsfluit en meerstemmige zang brengen ze kwalitatieve covers met net dat tikje meer. Uniek door de eigen muzikale twist die ze aan elk nummer geven. Bill Withers, Nirvana, Ella Fitzgerald, Arctic Monkeys, Zaz, Nick Cave, Elvis, Bob Marley, Frank Sinatra, CCR, Amy Winehouse, Mumford & Sons, Chaka Khan, Britney Spears, etc… Ze durven allemaal de revue te passeren. Ze doen met elke song volledig hun eigen ding en serveren een mooi samenhangende, warme, muzikale reis om lekker bij weg te dromen, een glaasje bij te drinken en natuurlijk ook een dansje bij te placeren!",
+  },
+  {
+    lookupName: "underground",
+    location: "Grote Markt",
+    bandPhoto: "/bands/underground.jpg",
+    bandName: "Underground",
+    time: "19u-21u",
+    description:
+      "Recht uit Izegem brengt Underground een frisse mix van rock- en popcovers. Deze jonge, startende band (16-20 jaar) speelt met veel enthousiasme nummers van Foo Fighters tot Avril Lavigne. Met hun energieke sound en passie voor muziek geven de zes muzikanten bekende hits een eigen twist. Ze staan te popelen om Izegem Klinkt te openen en trappen het evenement af met een knallende set. Van 19 tot 21 uur zorgen ze voor een avond vol strakke gitaren, krachtige vocals en pure energie. Ze zijn een beginnende band, maar zijn klaar om hun muziek met het publiek te delen. Zin in een avond vol bekende rocknummers? Hou Underground in de gaten! 🎸🔥",
+  },
+  {
+    lookupName: "the-mocrats",
+    location: "???",
+    time: "???",
+    bandPhoto: "/bands/the-mocrats.png",
+    bandName: "The MocRats",
+    website:
+      "https://www.facebook.com/https://www.facebook.com/themocratsband/",
+    description:
+      "The MocRats -vijf muzikanten, verschillende leeftijden, verschillende achtergronden, maar één gedeelde passie: de rauwe energie van de grunge uit de jaren '90. We brengen een stevige set met covers van legendarische bands als Pearl Jam, Nirvana, Green Day, Smashing Pumpkins en Red Hot Chili Peppers. Maar we schuwen een verrassende uitstap naar andere decennia niet - zolang het maar knalt! Ons motto: 'We bring the noise 🎶 You bring the energy ⚡' Klaar om mee te brullen, springen en headbangen? See you at Izegem!",
+  },
+  {
+    lookupName: "the-gambits",
+    bandName: "The Gambits",
+    location: "Vlaams Huis",
+    time: "???",
+    bandPhoto: "/bands/gambits.jpg",
+    website: "https://www.gambits.be/",
+    video: "https://www.youtube.com/embed/br4VE473kek?si=CNxxbT8_xO4dACrv",
+    description:
+      "Wij zijn een West-Vlaamse rockabilly coverband. Sinds 2013 brengen wij iedereen aan het dansen! Onze gevarieerde playlist is een verzameling van alle beste rockabilly, country en rock'n'roll klassiekers. We hebben het dan natuurlijk over Johnny Cash, Elvis Presley, The Beatles, Jerry Lee Lewis, Bill Haley, Eddie Cochran, Stray Cats... De ene hit na de andere passeert de revue, nummers die ongetwijfeld voor sfeer en ambiance zorgen! Put on your dancing shoes.",
+  },
+  {
+    lookupName: "tusn-tvolk",
+    bandName: "Tusn tvolk",
+    location: "???",
+    time: "???",
+    website: "https://versespruitjes.be/listing/tusn-tvolk/",
+    bandPhoto: "/bands/tusn-tvolk.jpg",
+    video: "https://www.youtube.com/embed/CBC76PJhZ50?si=MQy4fZjS4ExXnDtQ",
+    description:
+      "'Tusn tvolk'. De naam zegt het zelf, we spelen het liefst zo dicht mogelijk tussen de mensen, op terrasjes, straatfeestjes, verjaardagsfeestjes, openingen, op straat… Herkenbare deuntjes, meezingers, hitjes van vroeger en nu, … in een eigen kleedje gestoken. Van Johnny Cash tot Doe maar, van Chuck Berry tot The Pogeus. Deze 6 troubadours hebben al vele jaren ervaring in diverse bands. Nood aan een leuke en onvergetelijke muziekactiviteit, 1 adres, 'tusn tvolk'.",
+  },
+  {
+    lookupName: "the-cover-store-xperience",
+    bandName: "THE COVER STORE XPERIENCE",
+    bandPhoto: "/bands/the-cover-store-xperience.JPG",
+    location: "???",
+    time: "???",
+    website: "https://www.facebook.com/tcspartyband/",
+    video: "https://www.youtube.com/embed/JfQJ9rQCtj0?si=eDTdvBfpHLwKUQ9M",
+    description:
+      "THE COVER STORE XPERIENCE staat garant voor feest en non-stop muziek gebracht door ervaren muzikanten. De partycoverband brengt een rijke mix aan Pop- en Rockcovers : eigenzinnige versies van een doordachte selectie hits uit de seventies tot nillies. Wat je zoal kan verwachten? Tina Turner, Anastacia, Lady Gaga, Bon Jovi, Bruno Mars, Robbie Williams … zelfs een authentieke Belgische dancemedley: you name it, they've got it. De herkomst van de band gaat terug naar eind tachtiger jaren. Er werd veelvuldig binnen de provincie West-Vlaanderen opgetreden. Toch volgden ook gigs in de Brusselse regio, Wallonië (Fête de la Musique – Vresse-Sur-Semois), Frankrijk (Fête de la Musique - Epernay) en Duitsland (Fantasialand -Brühl): van Internationale ervaring gesproken… Voor alle festivals, bedrijfs- en personeelsevenementen; outdoorhappenings en andere festiviteiten waar ambiance kan en mag... I got a feeling that tonight's gonna be a good night !",
+  },
+  {
+    lookupName: "little-chris",
+    bandName: "Little Chris",
+    location: "Oude Sint-Pieter",
+    time: "22u - 0u",
+    bandPhoto: "/bands/little-chris.jpg",
+    website: "https://www.facebook.com/p/Little-Chris-100032304417059/",
+    description:
+      "Akoestische artiest met een twist ! Vanalles kan de revue passeren zoals Pop, Rock, Classic Rock, Blues, Rock 'n Roll geheel op zijn eigen manier gebracht. Nummers van oa Bruce Springsteen, Cindy Lauper, David Bowie maar ook KISS, Pink Floyd, ea...",
+  },
+  {
+    lookupName: "PD-Martin",
+    bandName: "PD Martin",
+    location: "???",
+    time: "???",
+    bandPhoto: "/bands/PDMartin.jpeg",
+    website: "https://vi.be/platform/pdmartinband",
+    description:
+      "Herfst 2019. PD Martin (aka Piet Vercauteren) en zijn band trekken de wereld in als een rechttoe rechtaan bluestrio. Maar de klasieke twaalf maten blijken niet genoeg voor hen en al snel verlaten ze het vertrouwde pad. Elke song, elke show wordt een verkenningstocht die hen dieper het drasland intrekt waar de grens tussen vurige blues en dampende funk vervaagt. Het drasland waar hun hartslag één wordt met het oerritme van de almachtige Soulbeat. Met de toevoeging van toetsen groeit het powertrio uit tot een funky blues 'n soul kwartet. Sterke composities, een retestrakke ritmesectie, gevatte teksten en virtuoos toetsen- en gitaarspel vormen het handelsmerk van deze opwindende band.Begin 2023 komt het album “Soulbeat Incarnate” uit. Een diverse verzameling van elf originele nummers. In oktober 2024 wordt PD Martin de winnaar van The Belgian Blues Challenge.",
+  },
+  {
+    lookupName: "vanairs",
+    bandName: "Vanairs",
+    location: "???",
+    time: "???",
+    bandPhoto: "/bands/vanairs.jpeg",
+    website: "https://www.vanairs.be/index.php",
+    video: "https://www.youtube.com/embed/Y_tQP2DJ4U4?si=9Sz1LWPB7uyrDhq6",
+    description:
+      "In 1994 begonnen een groep vrienden een Coverband. Vanairs was geboren en werd een vaste waarde in de Dentergemse muziekscéne en ver daarbuiten. Amusement van de bovenste plank, in combinatie met een gamma van meezingers en bekende nummers. Hun moto: speel vanuit je passie, je gevoel. Probeer niks te bewijzen en geniet van de fascinerende muziekwereld en de vriendschapsbanden die een logisch gevolg zijn van het samen musiceren !",
+  },
+  {
+    lookupName: "blue-hearse",
+    bandName: "Blue Hearse",
+    location: "???",
+    time: "???",
+    bandPhoto: "/bands/blue-hearse.webp",
+    website: "https://vi.be/platform/BlueHearse",
+    video: "https://www.youtube.com/embed/_yaDieC2N38?si=mQ5Fjc-tVZebldX0",
+    description:
+      "Blue Hearse is een Belgische bluesgroep die een unieke mix brengt van gitaarblues, bluesrock en funky blues, aangevuld met eigen interpretaties van klassieke bluessongs. De band bestaat uit vier ervaren muzikanten: Wim Timperman (zang, gitaar, saxofoon), Bas Kindt (gitaar), Andrzej Kerckhof (drums) en Bart Kerckhof (basgitaar). Blue Hearse staat bekend om hun energieke liveoptredens, waarbij zij rauwe bluesklanken combineren met funky ritmes en meeslepende gitaarriffs. De band put inspiratie uit iconische bluesartiesten, maar geeft hun eigen draai aan het genre door moderne invloeden te verwerken. Met een dynamische interactie tussen de gitaren van Timperman en Kindt en de strakke ritmesectie van de gebroeders Kerckhof, brengt Blue Hearse een krachtige, eigenzinnige sound.",
+  },
+  {
+    lookupName: "feest-dj-lucki-luc",
+    bandName: "Feest DJ Lucki Luc",
+    location: "???",
+    time: "???",
+    bandPhoto: "/bands/LuckiLuc.jpg",
+    website: "https://www.feestdjluckiluc.be/",
+    video: "https://www.youtube.com/embed/hFwE2UXPs4c?si=CDEqke6J9_ELbDk3",
+    description:
+      "De topper op festivals, schlager party's, Foute Party's, Oktoberfeesten enzovoort is Feest DJ Lucki Luc! Deze feestleverancier heeft zichzelf reeds bewezen op talrijke festivals en feestjes. Denk maar aan Dance D-Vision, Festiloco, Fantasia Festival, Highlight Festival, Hype’O Dream, Moose Bar... Ook in 2025 komt Luc opnieuw met de beste en grootste feestnummers naar je toe! Met een continu up-to-date setlist weet hij iedereen in te palmen. Wist je dat hij naast het leveren van feest achter zijn DJ-booth, ook zijn publiek verrast met eigen aanstekelijke soundtracks? Zo maakte hij de grote hit “Dans DJ Dans” voor Peter Van de Veire en is hij de man van de après-ski versie van “Als een leeuw in een kooi”, “Paard in de gang”, “Last Christmas”,...",
+  },
+];
 
 export default {
   "2025": bands2025,

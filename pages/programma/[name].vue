@@ -23,8 +23,8 @@
               {{ bandDetails?.location }}
               <span v-if="bandDetails?.time">- {{ bandDetails?.time }}</span>
             </p>
-            <p class="text-base leading-relaxed md:text-lg">
-              {{ bandDetails?.description }}
+            <p class="whitespace-pre-wrap text-base leading-relaxed md:text-lg">
+              {{ formattedDescription }}
             </p>
           </div>
 
@@ -145,6 +145,20 @@ const bandDetails = computed(() => {
     }
   }
   return null;
+});
+
+const formattedDescription = computed(() => {
+  if (!bandDetails.value?.description) return "";
+
+  // Split into sentences (roughly) and add line breaks
+  const res = bandDetails.value.description
+    .replace(/([.!?])\s+/g, "$1\n") // Add double newline after sentences
+    .replace(/\n{3,}/g, "\n\n") // Remove excess newlines
+    .trim(); // Remove trailing whitespace
+
+  console.log(res);
+
+  return res;
 });
 
 useHead({
