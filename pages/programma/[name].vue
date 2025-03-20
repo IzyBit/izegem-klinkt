@@ -159,11 +159,121 @@ const formattedDescription = computed(() => {
   return res;
 });
 
-useHead({
-  title: computed(() => {
-    return bandDetails.value?.bandName
-      ? `Programma - ${bandDetails.value.bandName} - Izegem Klinkt`
-      : "Programma - Izegem Klinkt";
-  }),
+// Add a reactive reference for loading state
+const isLoading = ref(true);
+
+// Watch for when bands are loaded
+watch(
+  bands,
+  () => {
+    isLoading.value = false;
+  },
+  { deep: true },
+);
+
+// Wait until data is available before setting head metadata
+watchEffect(() => {
+  // Make sure we set at least basic metadata immediately for initial crawling
+  useHead({
+    title: "Programma | Izegem Klinkt",
+    meta: [
+      {
+        name: "description",
+        content: "Ontdek het programma van Izegem Klinkt!",
+      },
+      {
+        property: "og:title",
+        content: "Programma | Izegem Klinkt",
+      },
+      {
+        property: "og:description",
+        content: "Ontdek het programma van Izegem Klinkt!",
+      },
+      {
+        property: "og:url",
+        content: "https://www.izegemklinkt.be/programma",
+      },
+      {
+        property: "og:image",
+        content: "https://www.izegemklinkt.be/logo.png",
+      },
+      // Add max-image-preview to enhance Google's image preview capabilities
+      {
+        name: "robots",
+        content: "max-image-preview:large",
+      },
+    ],
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.izegemklinkt.be/programma",
+      },
+    ],
+  });
+
+  // Update with specific band details once they're loaded
+  if (!isLoading.value && bandDetails.value) {
+    useHead({
+      title: bandDetails.value.bandName
+        ? `${bandDetails.value.bandName} | Izegem Klinkt`
+        : "Programma | Izegem Klinkt",
+      canonical: bandDetails.value.lookupName
+        ? `https://www.izegemklinkt.be/programma/${bandDetails.value.lookupName}`
+        : "https://www.izegemklinkt.be/programma",
+      meta: [
+        {
+          name: "description",
+          content:
+            // cap length to 160 characters for better SEO
+            bandDetails.value.description?.substring(0, 160) ||
+            "Ontdek het programma van Izegem Klinkt!",
+        },
+        {
+          property: "og:title",
+          content: bandDetails.value.bandName
+            ? `${bandDetails.value.bandName} | Izegem Klinkt`
+            : "Programma | Izegem Klinkt",
+        },
+        {
+          property: "og:description",
+          content:
+            // cap length to 160 characters for better SEO
+            bandDetails.value.description?.substring(0, 160) ||
+            "Ontdek het programma van Izegem Klinkt!",
+        },
+        {
+          property: "og:url",
+          content: bandDetails.value.lookupName
+            ? `https://www.izegemklinkt.be/programma/${bandDetails.value.lookupName}`
+            : "https://www.izegemklinkt.be/programma",
+        },
+        {
+          property: "og:image",
+          content:
+            "https://www.izegemklinkt.be/" + bandDetails.value.bandPhoto ||
+            "https://www.izegemklinkt.be/logo.png",
+        },
+        {
+          name: "twitter:image",
+          content:
+            "https://www.izegemklinkt.be/" + bandDetails.value.bandPhoto ||
+            "https://www.izegemklinkt.be/logo.png",
+        },
+        // Add structured data hints for search engines
+        {
+          name: "robots",
+          content: "max-image-preview:large",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: bandDetails.value.lookupName
+            ? `https://www.izegemklinkt.be/programma/${bandDetails.value.lookupName}`
+            : "https://www.izegemklinkt.be/programma",
+        },
+      ],
+    });
+  }
 });
 </script>

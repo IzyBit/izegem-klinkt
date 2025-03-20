@@ -9,7 +9,7 @@
           Download hier het programmaboekje
         </h2>
       </a>
-      
+
       <!-- Year tabs -->
       <div class="mb-8 border-b border-gray-200">
         <ul class="-mb-px flex flex-wrap text-center text-sm font-medium">
@@ -28,13 +28,13 @@
           </li>
         </ul>
       </div>
-      
+
       <!-- Band cards with transition -->
       <transition name="fade-slide" mode="out-in">
         <div
           v-if="bands[selectedYear]?.length > 0"
           :key="selectedYear"
-          class="mx-auto grid w-full gap-x-8 gap-y-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          class="mx-auto grid w-full grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         >
           <div
             v-for="lineUpItem in bands[selectedYear]"
@@ -79,9 +79,25 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Programma van IzegemKlinkt 2025",
+      content:
+        "Ontdek het volledige programma van Izegem Klinkt. Bekijk alle bands, podia en speeltijden van het festival.",
+    },
+    {
+      name: "keywords",
+      content:
+        "Izegem Klinkt, festival programma, line-up, bands, muziekfestival, Izegem",
+    },
+    {
+      property: "og:title",
+      content: "Programma | Izegem Klinkt",
+    },
+    {
+      property: "og:description",
+      content:
+        "Ontdek het volledige programma van Izegem Klinkt. Bekijk alle bands, podia en speeltijden van het festival.",
     },
   ],
+  link: [{ rel: "canonical", href: "https://www.izegemklinkt.be/programma" }],
 });
 
 const showNotAvailableMessage = () => {
