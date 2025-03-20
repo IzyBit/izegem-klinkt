@@ -14,21 +14,22 @@
     "lintfix": "eslint . --fix && prettier --write --list-different ."
   },
   "dependencies": {
-    "@nuxtjs/seo": "2.0.0-rc.23",
-    "@primevue/themes": "^4.2.0",
+    "@nuxtjs/robots": "5.2.8",
+    "@nuxtjs/sitemap": "7.2.9",
+    "@primeuix/themes": "^1.0.0",
+    "@primevue/forms": "^4.3.2",
     "mime-types": "^2.1.35",
-    "nuxt": "^3.13.2",
-    "nuxt-booster": "^3.1.6",
+    "nuxt": "^3.16.1",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "primeicons": "^7.0.0",
-    "primevue": "^4.2.0",
+    "primevue": "^4.3.2",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.6.1",
     "@nuxt/image": "^1.8.1",
-    "@primevue/nuxt-module": "^4.2.0",
+    "@primevue/nuxt-module": "^4.3.2",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
     "autoprefixer": "^10.4.20",
@@ -42,12 +43,5 @@
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild",
-      "sharp",
-      "vue-demi"
-    ]
-  }
+  "packageManager": "pnpm@10.6.4+sha512.da3d715bfd22a9a105e6e8088cfc7826699332ded60c423b14ec613a185f1602206702ff0fe4c438cb15c979081ce4cb02568e364b15174503a63c7a8e2a5f6c"
 }

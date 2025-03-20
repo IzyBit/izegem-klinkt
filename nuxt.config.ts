@@ -1,16 +1,11 @@
-import Aura from "@primevue/themes/aura";
+import Aura from "@primeuix/themes/aura";
+
 import { defineNuxtConfig } from "nuxt/config";
 import bands from "./data/bands";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    "@primevue/nuxt-module",
-    "@nuxt/image",
-    "@nuxt/eslint",
-    "@nuxtjs/seo",
-    "nuxt-booster",
-  ],
+  modules: ["@primevue/nuxt-module", "@nuxt/image", "@nuxt/eslint", "@nuxtjs/robots", "@nuxtjs/sitemap"],
 
   // Nuxt Image module configuration
   image: {
@@ -127,19 +122,13 @@ export default defineNuxtConfig({
   },
 
   primevue: {
-    include: ["Galleria"],
     options: {
-      ripple: false,
-      inputVariant: "outlined",
       theme: {
         preset: Aura,
-        options: {
-          prefix: "p",
-          darkModeSelector: "system",
-          cssLayer: false,
-        },
       },
     },
+    // I only need Galleria
+    components: ["Galleria"],
   },
 
   css: ["~/assets/css/main.css"],
