@@ -127,11 +127,6 @@ export default defineNuxtConfig({
     url: "https://www.izegemklinkt.be",
   },
 
-  // Build for vercel
-  nitro: {
-    preset: "vercel",
-  },
-
   primevue: {
     options: {
       theme: {
