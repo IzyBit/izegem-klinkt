@@ -9,7 +9,7 @@
           Download hier het programmaboekje
         </h2>
       </a>
-
+      
       <!-- Year tabs -->
       <div class="mb-8 border-b border-gray-200">
         <ul class="-mb-px flex flex-wrap text-center text-sm font-medium">
@@ -28,18 +28,18 @@
           </li>
         </ul>
       </div>
-
+      
       <!-- Band cards with transition -->
       <transition name="fade-slide" mode="out-in">
         <div
           v-if="bands[selectedYear]?.length > 0"
           :key="selectedYear"
-          class="mx-auto grid w-full justify-items-center gap-x-8 gap-y-16 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+          class="mx-auto grid w-full gap-x-8 gap-y-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         >
           <div
             v-for="lineUpItem in bands[selectedYear]"
             :key="lineUpItem.lookupName"
-            class="flex h-full w-full"
+            class="flex justify-center"
           >
             <BandCard
               :location="lineUpItem.location"
@@ -47,7 +47,6 @@
               :band-name="lineUpItem.bandName"
               :time="lineUpItem.time"
               :lookup-name="lineUpItem.lookupName"
-              class="flex-1"
             />
           </div>
         </div>
@@ -67,7 +66,6 @@ const bands = ref({
   2024: [],
   2025: [],
 });
-
 const years = computed(() => Object.keys(bands.value).sort().reverse());
 const selectedYear = ref("2025");
 
