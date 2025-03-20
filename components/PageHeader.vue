@@ -3,7 +3,7 @@
     <a
       href="/#home"
       aria-label="Back to home"
-      class="back-to-top fixed left-5 top-5 z-20 h-20 w-20"
+      class="back-to-top fixed left-5 top-5 z-50 h-20 w-20 cursor-pointer"
     />
 
     <header
@@ -61,5 +61,6 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 9999;
 }
 </style>
