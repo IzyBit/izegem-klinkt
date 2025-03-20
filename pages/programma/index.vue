@@ -4,7 +4,7 @@
     <HamburgerMenu />
     <div class="mx-auto flex w-9/12 flex-col">
       <h1 class="mb-10 mt-20 text-5xl font-bold text-white">Programma</h1>
-      <a class="underline" target="_blank" href="/BOEKJE-IZEGEMKLINKT-2024.pdf">
+      <a class="underline" href="#" @click="showNotAvailableMessage">
         <h2 class="mb-10 text-2xl font-bold text-white">
           Download hier het programmaboekje
         </h2>
@@ -34,7 +34,7 @@
         <div
           v-if="bands[selectedYear]?.length > 0"
           :key="selectedYear"
-          class="2xl:grid-cols-4 grid gap-x-8 gap-y-16 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+          class="grid gap-x-8 gap-y-16 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
         >
           <BandCard
             v-for="lineUpItem in bands[selectedYear]"
@@ -48,7 +48,7 @@
         </div>
         <div v-else key="no-bands" class="min-h-64">
           <p class="w-full text-center text-2xl font-semibold text-white">
-            Komt binnenkort...
+            Bands ophalen...
           </p>
         </div>
       </transition>
@@ -81,6 +81,10 @@ useHead({
     },
   ],
 });
+
+const showNotAvailableMessage = () => {
+  alert("Het boekje voor 2025 is nog niet beschikbaar.");
+};
 </script>
 
 <style scoped>

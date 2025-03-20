@@ -6,17 +6,22 @@
   >
     <div class="sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
       <h2 class="mb-2 text-6xl font-bold text-white">Ons Verhaal</h2>
-      <p>
+      <p class="mb-4">
         Welkom bij Izegem Klinkt, een betoverende muzikale tournée in de
         Pekkersstad. Al meer dan 30 edities lang vieren we muziek, gezelligheid
         en samenzijn, en dat allemaal dankzij het toegewijde werk van
-        gepassioneerde vrijwilligers. In de bruisende maand mei nodigen we jong
-        en oud uit om deel te nemen aan ons unieke evenement, dat gratis
-        toegankelijk is voor iedereen. Izegem Klinkt biedt voor elk wat wils:
-        van nostalgische klanken tot eigentijdse beats. Ons evenement voegt niet
-        alleen muzikale variatie toe aan de Stad Izegem, maar creëert ook een
-        warme en levendige sfeer die de gemeenschap verbindt. We hopen dat u
-        erbij bent!
+        gepassioneerde vrijwilligers.
+      </p>
+      <p class="mb-4">
+        In de bruisende maand mei nodigen we jong en oud uit om deel te nemen
+        aan ons unieke evenement, dat gratis toegankelijk is voor iedereen.
+        Izegem Klinkt biedt voor elk wat wils: van nostalgische klanken tot
+        eigentijdse beats.
+      </p>
+      <p>
+        Ons evenement voegt niet alleen muzikale variatie toe aan de Stad
+        Izegem, maar creëert ook een warme en levendige sfeer die de gemeenschap
+        verbindt. We hopen dat u erbij bent!
       </p>
     </div>
     <div

@@ -1,7 +1,7 @@
 interface Band {
   lookupName: string;
   location: string;
-  time: string;
+  time?: string;
   bandPhoto: string;
   bandName: string;
   website?: string;
@@ -184,8 +184,7 @@ const bands2024: Band[] = [
 const bands2025: Band[] = [
   {
     lookupName: "kiko-and-the-quarantines",
-    location: "???",
-    time: "???",
+    location: "Lagaar",
     bandPhoto: "/bands/kiko-and-the-quarantines.jpeg",
     bandName: "Kiko & The Quarantines",
     website: "https://www.kikoandthequarantines.com/",
@@ -204,8 +203,7 @@ const bands2025: Band[] = [
   },
   {
     lookupName: "the-mocrats",
-    location: "???",
-    time: "???",
+    location: "Plectrum",
     bandPhoto: "/bands/the-mocrats.png",
     bandName: "The MocRats",
     website:
@@ -217,7 +215,6 @@ const bands2025: Band[] = [
     lookupName: "the-gambits",
     bandName: "The Gambits",
     location: "Vlaams Huis",
-    time: "???",
     bandPhoto: "/bands/gambits.jpg",
     website: "https://www.gambits.be/",
     video: "https://www.youtube.com/embed/br4VE473kek?si=CNxxbT8_xO4dACrv",
@@ -227,8 +224,7 @@ const bands2025: Band[] = [
   {
     lookupName: "tusn-tvolk",
     bandName: "Tusn tvolk",
-    location: "???",
-    time: "???",
+    location: "'t Doolkruyt",
     website: "https://versespruitjes.be/listing/tusn-tvolk/",
     bandPhoto: "/bands/tusn-tvolk.jpg",
     video: "https://www.youtube.com/embed/CBC76PJhZ50?si=MQy4fZjS4ExXnDtQ",
@@ -239,8 +235,7 @@ const bands2025: Band[] = [
     lookupName: "the-cover-store-xperience",
     bandName: "THE COVER STORE XPERIENCE",
     bandPhoto: "/bands/the-cover-store-xperience.JPG",
-    location: "???",
-    time: "???",
+    location: "Koornmarkt",
     website: "https://www.facebook.com/tcspartyband/",
     video: "https://www.youtube.com/embed/JfQJ9rQCtj0?si=eDTdvBfpHLwKUQ9M",
     description:
@@ -249,7 +244,7 @@ const bands2025: Band[] = [
   {
     lookupName: "little-chris",
     bandName: "Little Chris",
-    location: "Oude Sint-Pieter",
+    location: "In de Oude Pieter",
     time: "22u - 0u",
     bandPhoto: "/bands/little-chris.jpg",
     website: "https://www.facebook.com/p/Little-Chris-100032304417059/",
@@ -259,8 +254,7 @@ const bands2025: Band[] = [
   {
     lookupName: "PD-Martin",
     bandName: "PD Martin",
-    location: "???",
-    time: "???",
+    location: "Damberd",
     bandPhoto: "/bands/PDMartin.jpeg",
     website: "https://vi.be/platform/pdmartinband",
     description:
@@ -269,8 +263,7 @@ const bands2025: Band[] = [
   {
     lookupName: "vanairs",
     bandName: "Vanairs",
-    location: "???",
-    time: "???",
+    location: "Playa",
     bandPhoto: "/bands/vanairs.jpeg",
     website: "https://www.vanairs.be/index.php",
     video: "https://www.youtube.com/embed/Y_tQP2DJ4U4?si=9Sz1LWPB7uyrDhq6",
@@ -280,8 +273,7 @@ const bands2025: Band[] = [
   {
     lookupName: "blue-hearse",
     bandName: "Blue Hearse",
-    location: "???",
-    time: "???",
+    location: "Leute's",
     bandPhoto: "/bands/blue-hearse.webp",
     website: "https://vi.be/platform/BlueHearse",
     video: "https://www.youtube.com/embed/_yaDieC2N38?si=mQ5Fjc-tVZebldX0",
@@ -291,8 +283,7 @@ const bands2025: Band[] = [
   {
     lookupName: "feest-dj-lucki-luc",
     bandName: "Feest DJ Lucki Luc",
-    location: "???",
-    time: "???",
+    location: "Ariba",
     bandPhoto: "/bands/LuckiLuc.jpg",
     website: "https://www.feestdjluckiluc.be/",
     video: "https://www.youtube.com/embed/hFwE2UXPs4c?si=CDEqke6J9_ELbDk3",
