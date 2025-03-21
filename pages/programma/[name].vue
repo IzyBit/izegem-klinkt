@@ -215,8 +215,8 @@ watchEffect(() => {
   if (!isLoading.value && bandDetails.value) {
     useHead({
       title: bandDetails.value.bandName
-        ? `${bandDetails.value.bandName} | Izegem Klinkt`
-        : "Programma | Izegem Klinkt",
+        ? `${bandDetails.value.bandName}`
+        : "Programma ",
       canonical: bandDetails.value.lookupName
         ? `https://www.izegemklinkt.be/programma/${bandDetails.value.lookupName}`
         : "https://www.izegemklinkt.be/programma",

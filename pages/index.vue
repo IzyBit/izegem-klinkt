@@ -16,7 +16,7 @@
 
 <script setup>
 useHead({
-  title: "Izegem Klinkt - Home",
+  title: "Home",
   meta: [
     {
       name: "description",
