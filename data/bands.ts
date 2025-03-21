@@ -207,8 +207,7 @@ const bands2025: Band[] = [
     location: "Plectrum",
     bandPhoto: "/bands/the-mocrats.png",
     bandName: "The MocRats",
-    website:
-      "https://www.facebook.com/https://www.facebook.com/themocratsband/",
+    website: "https://www.facebook.com/themocratsband/",
     description:
       "The MocRats -vijf muzikanten, verschillende leeftijden, verschillende achtergronden, maar één gedeelde passie: de rauwe energie van de grunge uit de jaren '90. We brengen een stevige set met covers van legendarische bands als Pearl Jam, Nirvana, Green Day, Smashing Pumpkins en Red Hot Chili Peppers. Maar we schuwen een verrassende uitstap naar andere decennia niet - zolang het maar knalt! Ons motto: 'We bring the noise 🎶 You bring the energy ⚡' Klaar om mee te brullen, springen en headbangen? See you at Izegem!",
   },
